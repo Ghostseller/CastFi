@@ -1,0 +1,20 @@
+{
+  "update": {},
+  "ads": { "enabled": false },
+  "announcements": [
+    {
+      "id": "welcome-2026-06",
+      "type": "banner",
+      "title": "CastFi를 시작합니다",
+      "body": "안녕하세요. CastFi 서비스를 이제 막 시작했습니다. 음악 재생 컨트롤과 헤드폰 EQ 보정을 편하게 이용해 주세요. 아직 부족한 점이 있더라도 꾸준히 업데이트하며 더 좋은 앱으로 만들어 가겠습니다. 많은 이용과 관심 부탁드립니다."
+    }
+  ],
+  "home": { "enabled": false },
+  "promo": { "intro": { "enabled": false } },
+  "flags": {},
+  "links": {},
+  "texts": {},
+  "telemetry": { "enabled": true },
+  "errors": { "enabled": false },
+  "testDevices": []
+}
