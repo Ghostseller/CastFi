@@ -1,10 +1,10 @@
 {
   "update": {
     "pc": {
-      "version": "0.1.1",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.1.1/CastFi-Setup-0.1.1.exe",
-      "sha256": "DF54C254258F39E2478C52BDCF5255C4FA1F832B4B341AB624118DAAC9FD1CB2",
-      "notes": "뮤직비디오 출력 정확도 개선 (공식 MV 우선, 악기·댄스 커버 제외)",
+      "version": "0.1.2",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.1.2/CastFi-Setup-0.1.2.exe",
+      "sha256": "5D782D44DDD8B330073562B67AD6E0326E3EEA4BBF7C5B5B3626DE0C3A34E515",
+      "notes": "풀스크린 가사/MV 화면 표시 개선 (영상 배경 꽉 채움, 스크롤바 제거)",
       "mandatory": false
     }
   },
