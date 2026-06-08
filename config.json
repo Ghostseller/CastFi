@@ -12,7 +12,7 @@
   "home": { "enabled": false },
   "promo": { "intro": { "enabled": false } },
   "flags": {},
-  "links": { "privacy": "https://github.com/Ghostseller/CastFi/blob/main/PRIVACY.md" },
+  "links": { "privacy": "https://github.com/Ghostseller/CastFi/blob/main/PRIVACY.md", "terms": "https://github.com/Ghostseller/CastFi/blob/main/TERMS.md" },
   "texts": {},
   "telemetry": { "enabled": true },
   "errors": { "enabled": false },
