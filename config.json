@@ -1,10 +1,10 @@
 {
   "update": {
     "pc": {
-      "version": "0.1.3",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.1.3/CastFi-Setup-0.1.3.exe",
-      "sha256": "971324D5DCE809D3CBFBB93861F621213D3873D400FF53421525531851395400",
-      "notes": "가사 화면 성능 개선 (깜빡임 해결, CPU 사용량 감소, 글로우 자연스럽게)",
+      "version": "0.1.4",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.1.4/CastFi-Setup-0.1.4.exe",
+      "sha256": "0B67DB46BE0CCB250F68B0DC173F0868EABBB3DF3487059C773EC77A6D4C15A5",
+      "notes": "가사 화면 — 상단 설정 접기/펴기 추가, 디바이스 영역까지 배경 확장. 한글 가수명 뮤직비디오 매칭 개선.",
       "mandatory": false
     }
   },
