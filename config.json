@@ -1,15 +1,21 @@
 {
   "update": {
     "pc": {
-      "version": "0.1.4",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.1.4/CastFi-Setup-0.1.4.exe",
-      "sha256": "0B67DB46BE0CCB250F68B0DC173F0868EABBB3DF3487059C773EC77A6D4C15A5",
-      "notes": "가사 화면 — 상단 설정 접기/펴기 추가, 디바이스 영역까지 배경 확장. 한글 가수명 뮤직비디오 매칭 개선.",
+      "version": "0.1.5",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.1.5/CastFi-Setup-0.1.5.exe",
+      "sha256": "2B06C70359C19C83D4F83D779E540FF3C4A4DA224B28D18626C9AE30812447E5",
+      "notes": "내 플레이리스트 — 곡 클릭 시 그 곡부터 이어 재생, 셔플·반복(전체/한곡) 추가(재생 중 즉시 반영), 어느 플랫폼에서 담은 곡이든 재생. YT Music에서 플레이리스트 밖 노래로 새던 문제 수정.",
       "mandatory": false
     }
   },
   "ads": { "enabled": false },
   "announcements": [
+    {
+      "id": "update-0.1.5",
+      "type": "banner",
+      "title": "v0.1.5 업데이트 — 내 플레이리스트 개선",
+      "body": "① 곡을 누르면 그 곡부터 플레이리스트가 이어서 재생됩니다(다음/이전 버튼이 플레이리스트 안에서 동작). ② 셔플·반복(전체/한 곡)이 추가됐고, 재생 중에 토글해도 즉시 반영됩니다. ③ 어느 플랫폼에서 담은 곡이든 Spotify/YT Music으로 재생됩니다. ④ 현재 재생 중인 곡이 목록에 ▶ 표시됩니다. ⑤ YT Music 재생 중 플레이리스트 밖 노래로 넘어가던 문제와 Spotify 요청 제한(429) 오류를 수정했습니다."
+    },
     {
       "id": "welcome-2026-06",
       "type": "banner",
