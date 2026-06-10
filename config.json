@@ -9,6 +9,7 @@
     }
   },
   "ads": { "enabled": false },
+  "cast": { "enabled": false, "url": "https://castfi-cast.banessayuu.workers.dev" },
   "announcements": [
     {
       "id": "update-0.1.6",
