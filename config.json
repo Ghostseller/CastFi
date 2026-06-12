@@ -1,10 +1,10 @@
 {
   "update": {
     "pc": {
-      "version": "0.2.4",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.2.4/CastFi-Setup-0.2.4.exe",
-      "sha256": "4EE0AEF2B074EAEBD6F2BB42BD7FAAAEA8BDCF1828141876F37FAE68082897F3",
-      "notes": "가사 화면 뮤직비디오 매칭 정확도 대폭 개선 — 공식 MV 우선 선택(한·일·미 80곡 검증), 한자·한글 예명 가수 자동 인식, 노래방·리믹스·게임 영상 제외.",
+      "version": "0.3.0",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.3.0/CastFi-Setup-0.3.0.exe",
+      "sha256": "9E10A3630647FB7001D9C3E52B67C43B03FF87DABEE18364CEC3DDCE1B7A2011",
+      "notes": "노래방 모드(보컬 줄이고 가사 크게) + 가사 카드 공유(우클릭 → 앨범아트/MV 장면 배경 PNG) 신규. 가사 모드 공지 칩 겹침 수정.",
       "mandatory": false
     }
   },
@@ -17,10 +17,10 @@
   },
   "announcements": [
     {
-      "id": "update-0.2.4",
+      "id": "update-0.3.0",
       "type": "banner",
-      "title": "v0.2.4 — 가사 뮤직비디오 매칭 개선",
-      "body": "가사 모드의 배경 뮤직비디오가 공식 MV를 훨씬 정확하게 찾습니다. 무대·커버·가사 영상이 공식 MV를 제치던 문제를 수정했고, 한자·한글 예명 가수(米津玄師, 아이유 등)와 영문 제목으로 등록된 한글 곡(손오공→Super 등)도 정확히 매칭됩니다. 노래방·리믹스·게임 영상은 배경에서 제외됩니다."
+      "title": "v0.3.0 — 노래방 모드 · 가사 카드",
+      "body": "① 노래방 모드: 가사 화면의 '노래방' 버튼으로 보컬을 줄이고(반주 유지) 가사를 크게 — 어떤 음악 서비스로 듣든 동작합니다(Equalizer APO 필요, 곡 믹스에 따라 효과 차이). ② 가사 카드: 가사 한 줄을 우클릭하면 앨범아트·MV 장면·그라디언트 배경의 카드로 만들어 PNG 복사/저장할 수 있습니다(번역 병기 지원). ③ 가사 모드에서 공지가 설정 버튼과 겹치던 문제를 수정했습니다."
     },
     {
       "id": "cast-guide-2026-06",
