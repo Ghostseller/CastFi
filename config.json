@@ -3,7 +3,7 @@
     "pc": {
       "version": "0.2.1",
       "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.2.1/CastFi-Setup-0.2.1.exe",
-      "sha256": "A7B127FFB7706A65C57A2490E136CD42193EAB89310F2E28B73AFC28A4AE0BDC",
+      "sha256": "8601E48C810191D96EBD99AD5DD795D362E6E9C8FCAE83309192EDE4CB5B369C",
       "notes": "캐스트(같이 듣기) 신규 — 초대 코드로 친구와 같은 곡을 각자 Spotify/YT/Apple 계정으로 동시 재생. 공유 큐·결곡 안전망·무튐 재생. Pretendard 서체, 설치 안정화.",
       "mandatory": false
     }
