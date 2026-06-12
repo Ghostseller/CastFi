@@ -1,10 +1,10 @@
 {
   "update": {
     "pc": {
-      "version": "0.2.1",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.2.1/CastFi-Setup-0.2.1.exe",
-      "sha256": "6bf62905c2acda0a45de69a7d94e91d936c228f056e38b4dd8b5184fc7e1a8ae",
-      "notes": "캐스트(같이 듣기) 신규 — 초대 코드로 친구와 같은 곡을 각자 Spotify/YT/Apple 계정으로 동시 재생. 공유 큐·결곡 안전망·무튐 재생. Pretendard 서체, 설치 안정화.",
+      "version": "0.2.2",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.2.2/CastFi-Setup-0.2.2.exe",
+      "sha256": "620968bb29d2618f2de306f8101b1ad488108e2b913018cb9c5823b489c579a5",
+      "notes": "캐스트 곡 매칭 정밀화 — ISRC 기반 정확 매칭(언어 무관, 리믹스/리마스터 구분), 영문 카탈로그 곡 한글 추가 실패 수정, Spotify 추가 시 곡 정보 누락 수정.",
       "mandatory": false
     }
   },
@@ -17,10 +17,10 @@
   },
   "announcements": [
     {
-      "id": "update-0.2.1",
+      "id": "update-0.2.2",
       "type": "banner",
-      "title": "v0.2.1 — 캐스트(같이 듣기) 출시",
-      "body": "초대 코드 6자리로 친구와 같은 곡을 동시에 들어보세요. 각자 자기 스트리밍(Spotify·YT Music·Apple Music) 계정으로 재생되고, 공유 큐에 곡을 함께 담을 수 있습니다. 곡이 튀지 않는 재생 정책과 결곡 안내, Pretendard 서체 적용, 설치 안정화가 포함됐습니다."
+      "title": "v0.2.2 — 캐스트 곡 매칭 정밀화",
+      "body": "곡을 어떤 언어로 검색·추가해도 정확한 곡으로 재생됩니다(ISRC 기반, 리믹스·리마스터 구분). YT Music에 영문으로 등록된 곡이 한글 추가에서 인식되지 않던 문제와 Spotify 추가 시 곡 정보 누락이 수정됐습니다."
     },
     {
       "id": "welcome-2026-06",
