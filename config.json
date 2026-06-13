@@ -1,10 +1,10 @@
 {
   "update": {
     "pc": {
-      "version": "0.2.4",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.2.4/CastFi-Setup-0.2.4.exe",
-      "sha256": "4EE0AEF2B074EAEBD6F2BB42BD7FAAAEA8BDCF1828141876F37FAE68082897F3",
-      "notes": "가사 화면 뮤직비디오 매칭 정확도 대폭 개선 — 공식 MV 우선 선택(한·일·미 80곡 검증), 한자·한글 예명 가수 자동 인식, 노래방·리믹스·게임 영상 제외.",
+      "version": "0.3.0",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.3.0/CastFi-Setup-0.3.0.exe",
+      "sha256": "f13b9bb341bf0edd40488b8519b446863404bec7aaa32393dff96f0929d6ea7f",
+      "notes": "가사 발음(한글) 표기 일·중·영, 앱별 볼륨 믹서+메인 볼륨 대상 선택, 청취 통계 ISRC 통합, 노래방 멀티채널 무음 수정, 캐스트 곡 매칭 정밀화.",
       "mandatory": false
     }
   },
@@ -16,6 +16,12 @@
     "url": "https://castfi-cast.banessayuu.workers.dev"
   },
   "announcements": [
+    {
+      "id": "update-0.3.0",
+      "type": "banner",
+      "title": "v0.3.0 — 가사 발음 한글 표기 · 볼륨 믹서",
+      "body": "가사를 한글 발음으로 따라부를 수 있습니다(일·중·영, 무료·오프라인). 앱별 볼륨 믹서와 '메인 볼륨이 조절할 대상(마스터/재생 앱)' 선택이 추가됐고, 청취 통계가 서비스 간 표기 차이를 ISRC로 합산합니다. 노래방 모드가 멀티채널 환경에서 소리가 안 나오던 문제도 수정했습니다."
+    },
     {
       "id": "update-0.2.4",
       "type": "banner",
