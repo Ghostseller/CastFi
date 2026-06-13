@@ -1,10 +1,10 @@
 {
   "update": {
     "pc": {
-      "version": "0.3.1",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.3.1/CastFi-Setup-0.3.1.exe",
-      "sha256": "2d2b8aaeb68244fc82c1af067ea29a1bd74266706aa9a57e5f86bb3d5da5210d",
-      "notes": "가사 발음(한글) 표기 일·중·영, 가사 카드 공유, 캐스트 개선(참여자 중복 수정·검색 플랫폼 자동 선택·곡 매칭 정밀화), 뮤직비디오 공식 영상 깜빡임 수정, 청취 통계 통합.",
+      "version": "0.3.2",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.3.2/CastFi-Setup-0.3.2.exe",
+      "sha256": "37c51ea8808f65cd3e011479babefec131dca22363e001ecfc24320f322a9bf6",
+      "notes": "Spotify 429(요청 제한) 대응으로 기능 마비 해결, Apple Music 캐스트 개선(헤더 아이콘 내부 이동·'CastFi 복귀' 바·로그인 자동 복귀), 신호 경로 음질이 Apple Music으로 정확 표시, 캐스트 안정화.",
       "mandatory": false
     }
   },
@@ -17,10 +17,10 @@
   },
   "announcements": [
     {
-      "id": "update-0.3.1",
+      "id": "update-0.3.2",
       "type": "banner",
-      "title": "v0.3.1 — 가사 발음 한글 표기 · 캐스트 개선",
-      "body": "해외 노래 가사를 한글 발음으로 따라부를 수 있습니다(일·중·영, 무료·오프라인). 캐스트 참여자 목록 중복 문제를 고쳤고, 검색 시 참여한 플랫폼이 자동 선택됩니다. 뮤직비디오에서 공식 영상이 안 뜨고 깜빡이던 문제도 수정했습니다."
+      "title": "v0.3.2 — Spotify 안정화 · Apple Music 캐스트 개선",
+      "body": "Spotify를 자주 쓸 때 요청 제한(429)으로 기능이 멈추던 문제를 크게 개선했습니다. Apple Music으로 같이 듣는 중에는 헤더의 Apple 아이콘으로 앱 내부 재생 화면으로 바로 이동하고, '← CastFi로 돌아가기' 버튼으로 언제든 돌아올 수 있습니다. 첫 로그인 후에는 자동으로 원래 화면으로 복귀합니다. 음질(신호 경로) 표시도 Apple Music을 정확히 인식하도록 고쳤습니다."
     },
     {
       "id": "cast-guide-2026-06",
