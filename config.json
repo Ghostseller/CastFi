@@ -3,7 +3,7 @@
     "pc": {
       "version": "0.3.1",
       "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.3.1/CastFi-Setup-0.3.1.exe",
-      "sha256": "65e49f33790c2f3337f3d526b8a4bdb72fd7eced524a25efbca62d611d3d3032",
+      "sha256": "d046d2e53300592fa40e2cd08dbbb0ea94592971bb704426c86314e4121b2f3d",
       "notes": "가사 발음(한글) 표기 일·중·영, 가사 카드 공유, 캐스트 개선(참여자 중복 수정·검색 플랫폼 자동 선택·곡 매칭 정밀화), 뮤직비디오 공식 영상 깜빡임 수정, 청취 통계 통합.",
       "mandatory": false
     }
