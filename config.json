@@ -1,10 +1,10 @@
 {
   "update": {
     "pc": {
-      "version": "0.3.4",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.3.4/CastFi-Setup-0.3.4.exe",
-      "sha256": "9b1af270b78b6daa46eb7ccbb5d75bdc950e0e7cc3c6245bb20c1776ffa55f34",
-      "notes": "Spotify를 별도 앱 없이 CastFi 안에서 검색·재생(요청 제한 우회)하고 플레이리스트·앨범을 목록째 이어 재생합니다. 같이 듣기(캐스트)에 내장/데스크탑 선택과 Spotify·Apple Music·YT Music 셔플·반복 조작을 추가하고, Apple Music 앱 내 재생과 단어 단위 가사 강조를 지원합니다. 캐스트 중 재생을 끄면 먼저 확인하고 참여자에게 종료를 알리며, Spotify DJ 멘트 구간에 엉뚱한 뮤직비디오가 뜨던 문제 등을 정리했습니다.",
+      "version": "0.3.2",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.3.2/CastFi-Setup-0.3.2.exe",
+      "sha256": "37c51ea8808f65cd3e011479babefec131dca22363e001ecfc24320f322a9bf6",
+      "notes": "Spotify 429(요청 제한) 대응으로 기능 마비 해결, Apple Music 캐스트 개선(헤더 아이콘 내부 이동·'CastFi 복귀' 바·로그인 자동 복귀), 신호 경로 음질이 Apple Music으로 정확 표시, 캐스트 안정화.",
       "mandatory": false
     }
   },
@@ -17,10 +17,10 @@
   },
   "announcements": [
     {
-      "id": "update-0.3.4",
+      "id": "update-0.3.2",
       "type": "banner",
-      "title": "v0.3.4 — Spotify 내장 재생 · 캐스트 강화 · 셔플/반복",
-      "body": "Spotify를 별도 앱 없이 CastFi 안에서 바로 검색·재생할 수 있고(요청 제한 우회), 플레이리스트·앨범도 목록째 이어 재생됩니다. 같이 듣기(캐스트)는 내장/데스크탑 재생을 고를 수 있고 Spotify·Apple Music·YT Music 모두 하단 바에서 셔플·반복을 조작합니다. 캐스트 중 재생을 끄면 먼저 확인하고 참여자에게 종료를 알립니다. Spotify DJ가 잠깐 멘트할 때 엉뚱한 뮤직비디오가 뜨던 것도 정리했습니다."
+      "title": "v0.3.2 — Spotify 안정화 · Apple Music 캐스트 개선",
+      "body": "Spotify를 자주 쓸 때 요청 제한(429)으로 기능이 멈추던 문제를 크게 개선했습니다. Apple Music으로 같이 듣는 중에는 헤더의 Apple 아이콘으로 앱 내부 재생 화면으로 바로 이동하고, '← CastFi로 돌아가기' 버튼으로 언제든 돌아올 수 있습니다. 첫 로그인 후에는 자동으로 원래 화면으로 복귀합니다. 음질(신호 경로) 표시도 Apple Music을 정확히 인식하도록 고쳤습니다."
     },
     {
       "id": "cast-guide-2026-06",
