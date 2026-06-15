@@ -1,10 +1,10 @@
 {
   "update": {
     "pc": {
-      "version": "0.3.2",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.3.2/CastFi-Setup-0.3.2.exe",
-      "sha256": "37c51ea8808f65cd3e011479babefec131dca22363e001ecfc24320f322a9bf6",
-      "notes": "Spotify 429(요청 제한) 대응으로 기능 마비 해결, Apple Music 캐스트 개선(헤더 아이콘 내부 이동·'CastFi 복귀' 바·로그인 자동 복귀), 신호 경로 음질이 Apple Music으로 정확 표시, 캐스트 안정화.",
+      "version": "0.3.5",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.3.5/CastFi-Setup-0.3.5.exe",
+      "sha256": "7AE2DCE0E550CCDB49265B3C355554836275770F5CD688D185CC1C81503BBF4D",
+      "notes": "Spotify·Apple Music 내장 엔진(앱 안에서 검색·재생, 요청 제한 429 우회) · 그룹 동시청취 강화(내장/데스크탑 재생 선택) · 3개 엔진 셔플·반복 · 단어단위 노래방 가사 · 뮤직비디오 정확도와 Spotify DJ 구간 처리 개선.",
       "mandatory": false
     }
   },
@@ -17,10 +17,10 @@
   },
   "announcements": [
     {
-      "id": "update-0.3.2",
+      "id": "update-0.3.5",
       "type": "banner",
-      "title": "v0.3.2 — Spotify 안정화 · Apple Music 캐스트 개선",
-      "body": "Spotify를 자주 쓸 때 요청 제한(429)으로 기능이 멈추던 문제를 크게 개선했습니다. Apple Music으로 같이 듣는 중에는 헤더의 Apple 아이콘으로 앱 내부 재생 화면으로 바로 이동하고, '← CastFi로 돌아가기' 버튼으로 언제든 돌아올 수 있습니다. 첫 로그인 후에는 자동으로 원래 화면으로 복귀합니다. 음질(신호 경로) 표시도 Apple Music을 정확히 인식하도록 고쳤습니다."
+      "title": "v0.3.5 — Spotify·Apple 내장 엔진 · 셔플/반복",
+      "body": "① Spotify·Apple Music을 별도 앱 없이 CastFi 안에서 검색·재생합니다(요청 제한 429 우회로 검색이 빠르고, 플레이리스트·앨범 곡을 눌러 다음 곡까지 이어 재생). ② 그룹 동시청취(캐스트)에서 내장 재생과 데스크탑 재생을 고를 수 있고, 헤더에 현재 재생 중인 플랫폼이 표시됩니다. ③ Spotify·Apple·YouTube Music 세 엔진 모두 하단 바에서 셔플·반복을 조작할 수 있습니다(Spotify 스마트셔플 포함). ④ 가사에 단어 단위 노래방 강조가 추가됐고, Spotify DJ 멘트 구간엔 앨범아트 배경을 표시하며, 매칭되지 않는 뮤직비디오는 더 이상 출력되지 않습니다."
     },
     {
       "id": "cast-guide-2026-06",
