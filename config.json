@@ -1,10 +1,10 @@
 {
   "update": {
     "pc": {
-      "version": "0.3.8",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.3.8/CastFi-Setup-0.3.8.exe",
-      "sha256": "430C41EF0CFEDDEC26A24B7CE80E89650C68CE1FE3082047053D03E46FF0F35E",
-      "notes": "[핫픽스] 헤더 검색 입력 안 되던 문제·검색창 X 중복 수정 + 캐스트 진행 헤더 표시. (0.3.7) 활성 음악 앱 선택·고정·표기 보정, 음질/신호 경로, 접근성, 영어 UI, Spotify 로그인·YT·코드복사 버그 수정.",
+      "version": "0.3.9",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.3.9/CastFi-Setup-0.3.9.exe",
+      "sha256": "25F7526F07FCCAC4B73684C5FD78FE4E715E4098BC2B60A4E4C5D1F92590BD73",
+      "notes": "검색 통합 — 검색·홈·라이브러리 탭, 곡수·연도·팔로워 배지, 내 앨범·아티스트 둘러보기(Spotify·YouTube Music·Apple Music), YouTube Music 차트.",
       "mandatory": false
     }
   },
@@ -17,10 +17,10 @@
   },
   "announcements": [
     {
-      "id": "update-0.3.8",
+      "id": "update-0.3.9",
       "type": "banner",
-      "title": "v0.3.8 — 검색 입력 수정(핫픽스) · 활성 음악 앱 선택·고정 외",
-      "body": "[핫픽스 0.3.8] 헤더 검색창에 글자가 입력되지 않던 문제와 검색창 우측의 X가 중복으로 보이던 것을 고쳤습니다(흰 X 하나만). 또한 같이 듣기(캐스트) 진행 중이면 헤더에 항상 표시됩니다 — 패널을 닫거나 휴대폰 등 다른 기기에서 시작/참여한 캐스트도 PC에서 확인할 수 있어요.\n\n① 여러 음악 앱이 동시에 감지될 때 실제 재생 중인 앱을 정확히 잡고, 원하는 앱을 직접 골라 고정(📌)할 수 있습니다. 내장 엔진이 'msedgewebview2.exe' 대신 Spotify·Apple Music·YouTube Music으로 바르게 표시됩니다. ② 소스→EQ→출력 신호 경로와 음질 등급을 확인하고 스트리밍 품질을 설정할 수 있으며, 스트리밍 플레이리스트의 곡 목록도 열어볼 수 있습니다. ③ 키보드 탐색·스크린리더 안내를 강화하고, 재생 중인 곡이 없을 때 버튼을 비활성화하며, 빈/오류 상태를 명확히 구분합니다. 영어 UI(캐스트·공지·검색 등)가 확대됐습니다. ④ EQ가 꺼져 있거나 미설치일 때 적용해도 안 들리던 혼동 방지, Spotify 로그인(Redirect URI) 오류, 일부 PC의 YouTube Music 외부 브라우저 열림, 캐스트 코드 복사 실패 표시 버그를 고쳤습니다."
+      "title": "v0.3.9 — 검색 통합: 홈·라이브러리 둘러보기 + 앨범·아티스트·차트",
+      "body": "PC 검색이 모바일 앱 수준으로 강화됐습니다 — 각 서비스로 이동하지 않고 CastFi 안에서 바로 둘러보세요.\n\n① 검색 모달 상단에 검색·홈·라이브러리 탭이 생겼습니다. 검색어가 없으면 홈(추천)과 내 라이브러리를 둘러보고, 입력하면 자동으로 검색됩니다. ② 곡 수·발매연도·팔로워·장르 같은 정보를 배지로 표시해 정보량을 모바일과 맞췄습니다. ③ 내 라이브러리에서 플레이리스트·곡에 더해 앨범·아티스트까지 둘러볼 수 있습니다(Spotify·YouTube Music·Apple Music 공통). ④ Spotify는 최근·자주 듣는 곡/아티스트를, YouTube Music은 홈 추천에 더해 차트(인기·트렌딩)를 함께 보여주고, Apple Music도 내 라이브러리를 둘러볼 수 있습니다."
     },
     {
       "id": "login-guide-2026-06",
