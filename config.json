@@ -1,10 +1,10 @@
 {
   "update": {
     "pc": {
-      "version": "0.3.5",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.3.5/CastFi-Setup-0.3.5.exe",
-      "sha256": "7AE2DCE0E550CCDB49265B3C355554836275770F5CD688D185CC1C81503BBF4D",
-      "notes": "Spotify·Apple Music 내장 엔진(앱 안에서 검색·재생, 요청 제한 429 우회) · 그룹 동시청취 강화(내장/데스크탑 재생 선택) · 3개 엔진 셔플·반복 · 단어단위 노래방 가사 · 뮤직비디오 정확도와 Spotify DJ 구간 처리 개선.",
+      "version": "0.3.7",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.3.7/CastFi-Setup-0.3.7.exe",
+      "sha256": "9041BE9AAFD146E9CC66423B61C2D64A29006D8A8BDB2DD00D7906825EFCCA5D",
+      "notes": "활성 음악 앱 선택·고정(여러 앱 중 실제 재생 중인 것 표시·msedgewebview2 표기 보정) · 음질/신호 경로 · 접근성(키보드·스크린리더) · EQ 무음적용 방지 · 캐스트 UX · 영어 UI 확대 · Spotify 로그인·YouTube Music·코드 복사 버그 수정.",
       "mandatory": false
     }
   },
