@@ -3,8 +3,8 @@
     "pc": {
       "version": "0.3.9",
       "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.3.9/CastFi-Setup-0.3.9.exe",
-      "sha256": "25F7526F07FCCAC4B73684C5FD78FE4E715E4098BC2B60A4E4C5D1F92590BD73",
-      "notes": "검색 통합 — 검색·홈·라이브러리 탭, 곡수·연도·팔로워 배지, 내 앨범·아티스트 둘러보기(Spotify·YouTube Music·Apple Music), YouTube Music 차트.",
+      "sha256": "B18F845BFE67A05307C0669A032553D1501C2FA4A3BA0CA375890695AFF0F7A2",
+      "notes": "검색 통합 — 검색·홈·라이브러리 탭, 곡수·연도·팔로워 배지, 내 앨범·아티스트(Spotify·YouTube Music·Apple Music), YouTube Music 차트 + 검색어 자동완성·Spotify 큐 추가·Apple Music 차트/추천.",
       "mandatory": false
     }
   },
@@ -19,8 +19,8 @@
     {
       "id": "update-0.3.9",
       "type": "banner",
-      "title": "v0.3.9 — 검색 통합: 홈·라이브러리 둘러보기 + 앨범·아티스트·차트",
-      "body": "PC 검색이 모바일 앱 수준으로 강화됐습니다 — 각 서비스로 이동하지 않고 CastFi 안에서 바로 둘러보세요.\n\n① 검색 모달 상단에 검색·홈·라이브러리 탭이 생겼습니다. 검색어가 없으면 홈(추천)과 내 라이브러리를 둘러보고, 입력하면 자동으로 검색됩니다. ② 곡 수·발매연도·팔로워·장르 같은 정보를 배지로 표시해 정보량을 모바일과 맞췄습니다. ③ 내 라이브러리에서 플레이리스트·곡에 더해 앨범·아티스트까지 둘러볼 수 있습니다(Spotify·YouTube Music·Apple Music 공통). ④ Spotify는 최근·자주 듣는 곡/아티스트를, YouTube Music은 홈 추천에 더해 차트(인기·트렌딩)를 함께 보여주고, Apple Music도 내 라이브러리를 둘러볼 수 있습니다."
+      "title": "v0.3.9 — 검색 통합: 홈·라이브러리 + 앨범·아티스트·차트·자동완성",
+      "body": "PC 검색이 모바일 앱 수준으로 강화됐습니다 — 각 서비스로 이동하지 않고 CastFi 안에서 바로 둘러보세요.\n\n① 검색 모달 상단에 검색·홈·라이브러리 탭. 검색어가 없으면 홈(추천)·내 라이브러리를 둘러보고, 입력하면 추천 검색어(자동완성)와 함께 검색됩니다. ② 곡 수·발매연도·팔로워·장르 배지로 정보량을 모바일과 맞췄습니다. ③ 내 라이브러리에서 플레이리스트·곡에 더해 앨범·아티스트까지 둘러볼 수 있습니다(Spotify·YouTube Music·Apple Music 공통). ④ Spotify는 최근·자주 듣는 곡/아티스트와 곡 '재생 큐에 추가', YouTube Music은 홈 추천 + 차트(인기·트렌딩), Apple Music은 내 라이브러리 + 차트·개인화 추천을 볼 수 있습니다."
     },
     {
       "id": "login-guide-2026-06",
