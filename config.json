@@ -37,6 +37,12 @@
       "body": "내 이미지를 영역별로 입히는 스킨과 7종 테마, 전체 화면 이미지가 마우스를 따라 움직이는 효과가 추가됐습니다. 라이트 테마(데이라이트)의 가독성을 전면 개선했고, 'Spotify 데스크탑 앱으로 재생' 시 0.5초마다 멈추던 문제와 기기 목록에서 Chrome으로 바꿨을 때 소리가 안 나던 문제를 고쳤습니다. 헤더 검색창이 아이콘과 겹치던 것도 수정했습니다."
     },
     {
+      "id": "defender-fp-0.4.2",
+      "type": "banner",
+      "title": "Windows Defender 오탐 안내 — CastFi가 삭제될 수 있어요",
+      "body": "일부 PC에서 Windows Defender가 CastFi를 'Trojan:Win32/Bearfoos.A!ml' 로 잘못 탐지해 삭제할 수 있습니다. 이는 코드 서명이 없는 새 빌드에 대한 머신러닝 오탐(false positive)이며, 악성코드가 아니고 데이터에도 문제가 없습니다. 해결: ① Windows 보안 → 바이러스 및 위협 방지 → 해당 항목 '허용', ② 또는 설치 폴더 (%LOCALAPPDATA%\\Programs\\CastFi)를 검사 '제외'에 추가하면 다시 삭제되지 않습니다. 마이크로소프트에 오탐 신고를 접수했으며, 검토되면 모든 PC에서 자동으로 해제됩니다."
+    },
+    {
       "id": "login-guide-2026-06",
       "type": "banner",
       "importance": "high",
