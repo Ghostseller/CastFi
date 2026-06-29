@@ -1,10 +1,10 @@
 {
   "update": {
     "pc": {
-      "version": "0.5.2",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.5.2/CastFi-Setup-0.5.2.exe",
-      "sha256": "bb096ad042dbf6f6e24ae0b03c63950621608a605840f0dfe423c7db51b0f90d",
-      "notes": "v0.5.1 핫픽스 — NAS 곡이 '불러오는 중'에서 멈추던 문제 근본 수정, 파일·외장하드·NAS 연결이 끊겼을 때 안내 후 다음 곡으로 자동 진행, NAS 연결 켜기/끄기 토글, 내 음악 뒤로가기·스크롤 위치 정확 복원.",
+      "version": "0.5.3",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.5.3/CastFi-Setup-0.5.3.exe",
+      "sha256": "ff738963b2bee74e0c59457e0f7c25b386f0b17bf78595b0780f5425a2a491ea",
+      "notes": "설치본에서 NAS 음원이 안 불러오던 문제(인증서 검증 방식)와, 가사 화면 배경 뮤직비디오가 영상 없는 다음 곡으로 넘어가도 이전 영상이 계속 재생되던 문제를 수정했습니다.",
       "mandatory": false
     },
     "android": {
