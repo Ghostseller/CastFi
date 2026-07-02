@@ -1,10 +1,10 @@
 {
   "update": {
     "pc": {
-      "version": "0.5.5",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.5.5/CastFi-Setup-0.5.5.exe",
-      "sha256": "d617b15b2a5b155efd540e866356eb2e4c16d336fc5a1a31c4ed2074aee1ea44",
-      "notes": "가사·뮤직비디오 모드에서 공식 영상이 다시 정확히 잡히도록 검색을 복구하고(전체 YouTube 폴백), 노래를 탐색하면 배경 뮤직비디오도 같은 위치로 따라가도록 했습니다. 또한 가사 전체화면에서 우측에 보이던 회색 빈 띠를 없애 영상·배경이 화면을 꽉 채웁니다.",
+      "version": "0.6.1",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.6.1/CastFi-Setup-0.6.1.exe",
+      "sha256": "deff2aa994f6a9d8ca01a5c581bc5c8fe97a9ee5575ce13f5120abe129f3f5c0",
+      "notes": "네트워크 플레이가 추가됐어요 — 내 음악(로컬/NAS)을 DLNA 기기로 직접 전송(갭리스·네이티브 DSD·멀티룸), PC 스트리밍 소리 라이브 중계, 네트워크로만 송출(PC 무음), PC 동시 청취(딜레이 싱크), 가사·재생바 네트워크 싱크까지. 스트리밍 중계의 간헐 끊김도 근본 수정했습니다.",
       "mandatory": false
     },
     "android": {
