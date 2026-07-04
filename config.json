@@ -1,10 +1,10 @@
 {
   "update": {
     "pc": {
-      "version": "0.7.1",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.7.1/CastFi-Setup-0.7.1.exe",
-      "sha256": "77B7CA9D3D1A34D6029B9B198948A5B6BF8AB34890AE5E987D57BDB17C00D827",
-      "notes": "0.7의 가장 큰 변화는 ASIO 출력 지원입니다 — 내 음악을 ASIO 드라이버로 DAC에 직결해 DSD(최대 DSD512)·PCM을 무변환·비트퍼펙트로 재생하고, DAC가 연결되지 않았을 때는 즉시 일반 경로로 폴백하며 안내합니다. 여기에 네트워크(DLNA) DSD 재생을 빠른 곡 전환에도 끊김·무음 없이 안정화하고, DAC 기본 형식을 원래대로 확실히 복원(직접 바꾼 설정은 존중), Apple Music 포함 스트리밍 소리를 선택한 출력 DAC로 정확히 라우팅합니다. DSD256 첫 곡 앨범아트 실종도 고쳤어요.",
+      "version": "0.7.2",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.7.2/CastFi-Setup-0.7.2.exe",
+      "sha256": "A3D031F8215312613BB09475C02310E94F96316D27149744CB63F3EE818E7E05",
+      "notes": "이번 업데이트는 스트리밍 출력 장치 일관성을 개선했습니다 — 로컬·내장뿐 아니라 외장 Spotify·Apple Music도 CastFi에서 선택한 출력 장치를 따라가고(나중에 실행해도 실행 직후 적용), 지금 실제로 소리가 나가는 장치를 \"(사용중)\"으로 표시합니다. 출력 장치를 \"기본\"으로 되돌리거나 CastFi를 종료하면 외장 앱도 시스템 기본 장치로 복귀합니다. (참고: Apple Music은 앱 특성상 재생 중인 곡은 다음 곡부터 적용됩니다.)",
       "mandatory": false
     },
     "android": {
