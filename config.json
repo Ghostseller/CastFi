@@ -1,10 +1,10 @@
 {
   "update": {
     "pc": {
-      "version": "0.8.2",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.8.2/CastFi-Setup-0.8.2.exe",
-      "sha256": "C03186951E43ED369624E03613B701F66383CDA651685C9FF6DAAB7FCA86B215",
-      "notes": "오디오 안정성 근본 강화 — 장치 전환(비트퍼펙트·DSD·ASIO·출력 장치) 수명주기 재정비, 다른 프로그램 소리까지 먹통이 되던 문제의 원인 경로 제거, 고정밀 음색 필터 메모리 보호, 종료 시 장치 반납 보장, 자가 진단·복구.",
+      "version": "0.8.3",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.8.3/CastFi-Setup-0.8.3.exe",
+      "sha256": "E982092AB10783CB718208AFB68257FAB5B084726EE8D78C633E683B93A64551",
+      "notes": "스트리밍 재생 안정화 — 스트리밍 소리에 정밀 매칭 EQ·DSD 업스케일 사용 시 순간 부하로 재생이 끊기고 지연·메모리가 눈덩이처럼 불어나던 문제를 근본 수정했습니다(소리 결과는 비트 동일). 내 음악 폴더 켜기/끄기(NAS 포함)와 라이브러리 밖 곡 큐 재생이 추가되고, 업데이트 설치 안정화·GPU 진단 수정이 포함됩니다.",
       "mandatory": false
     },
     "android": {
@@ -24,11 +24,11 @@
   },
   "announcements": [
     {
-      "id": "update-0.8.2",
+      "id": "update-0.8.3",
       "type": "banner",
-      "title": "v0.8.2 업데이트 — 오디오 안정성 근본 강화",
-      "body": "오디오 장치 전환을 전면 재정비해 반복 전환·장시간 사용 후 다른 프로그램 소리까지 먹통이 되던 문제의 원인 경로를 제거했습니다. 고정밀 음색 필터의 메모리 보호, 앱 종료 시 장치 반납 보장, 소리 경로 자가 진단·복구가 추가됐습니다. 빠른 전환 시 잠깐 '전환 중'이 보일 수 있습니다(안정성을 위한 정상 동작).",
-      "url": "https://github.com/Ghostseller/CastFi/releases/tag/v0.8.1"
+      "title": "v0.8.3 업데이트 — 스트리밍 재생 안정화 · 내 음악 폴더 켜기/끄기",
+      "body": "스트리밍 소리에 정밀 매칭 EQ와 DSD 업스케일을 함께 쓸 때 재생이 끊기고 지연이 수십 초까지 쌓이던 문제를 근본 수정했습니다(소리 결과는 비트 동일). 내 음악 폴더(NAS 포함)를 켜고 끌 수 있고, 재생큐 '파일 추가'로 라이브러리 밖 곡도 재생할 수 있습니다. 업데이트 설치 안정화와 GPU 진단 수정도 포함됩니다.",
+      "url": "https://github.com/Ghostseller/CastFi/releases/tag/v0.8.3"
     },
     {
       "id": "update-0.7.1",
