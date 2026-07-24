@@ -1,10 +1,10 @@
 {
   "update": {
     "pc": {
-      "version": "0.8.1",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.8.1/CastFi-Setup-0.8.1.exe",
-      "sha256": "189BEADD6A4F2A1E475D18EAB744FBF5ADA067814E9143A8EEB97E332D6CA5A5",
-      "notes": "대형 업데이트 — 오프라인 DSD(DSF) 변환, FIR 정밀 EQ 대확장(레이어·간편 곡선·구간 밴드·L/R 매칭), 스피커 모드(니어필드/스튜디오/와이드), 음량 일관성·보호, 오류 제보, 설치판 GPU(CUDA) 가속 정상화.",
+      "version": "0.8.2",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.8.2/CastFi-Setup-0.8.2.exe",
+      "sha256": "C03186951E43ED369624E03613B701F66383CDA651685C9FF6DAAB7FCA86B215",
+      "notes": "오디오 안정성 근본 강화 — 장치 전환(비트퍼펙트·DSD·ASIO·출력 장치) 수명주기 재정비, 다른 프로그램 소리까지 먹통이 되던 문제의 원인 경로 제거, 고정밀 음색 필터 메모리 보호, 종료 시 장치 반납 보장, 자가 진단·복구.",
       "mandatory": false
     },
     "android": {
@@ -24,10 +24,10 @@
   },
   "announcements": [
     {
-      "id": "update-0.8.1",
+      "id": "update-0.8.2",
       "type": "banner",
-      "title": "v0.8.1 대형 업데이트 — DSD 변환·FIR 정밀 EQ·스피커 모드",
-      "body": "보유 음원을 DSD(.dsf)로 변환·저장하는 오프라인 변환, FIR 정밀 EQ 대확장(독립 레이어·간편 곡선·구간 밴드·좌/우 독립 매칭), 헤드폰으로 스피커 청취감을 재현하는 스피커 모드, 음량 일관성·순간피크 보호, 설정의 오류 제보, 설치판 GPU(CUDA) 가속 정상화까지 — 자동 업데이트로 받아보세요.",
+      "title": "v0.8.2 업데이트 — 오디오 안정성 근본 강화",
+      "body": "오디오 장치 전환을 전면 재정비해 반복 전환·장시간 사용 후 다른 프로그램 소리까지 먹통이 되던 문제의 원인 경로를 제거했습니다. 고정밀 음색 필터의 메모리 보호, 앱 종료 시 장치 반납 보장, 소리 경로 자가 진단·복구가 추가됐습니다. 빠른 전환 시 잠깐 '전환 중'이 보일 수 있습니다(안정성을 위한 정상 동작).",
       "url": "https://github.com/Ghostseller/CastFi/releases/tag/v0.8.1"
     },
     {
