@@ -1,10 +1,10 @@
 {
   "update": {
     "pc": {
-      "version": "0.8.5",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.8.5/CastFi-Setup-0.8.5.exe",
-      "sha256": "64147ED587A219E4EF7FA7F3E6AC6FF10F18BF9DDDC6C80629765CE8F437ADB9",
-      "notes": "핫픽스 — 스트리밍 재생 중 순간순간 끊기던 문제, FIR 정밀 EQ의 스피커 모드가 설치판에서 표시되지 않던 문제, DSD 준비 중 가사 배경 MV가 나오지 않던 문제를 수정했습니다.",
+      "version": "0.8.6",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.8.6/CastFi-Setup-0.8.6.exe",
+      "sha256": "0F95E95C15CA6ECA712041352C9B5E97A380B5444A3A010C09C955399D181089",
+      "notes": "애플뮤직(외부 앱) DSD 업샘플 자동화 — DAC와 같은 장치로 재생 중이어도 자동으로 동작합니다(켠 뒤 20~30초·실패 시 원인 안내와 함께 안전 복귀). 신호 경로가 실제 출력 방식·장치와 FIR EQ 준비/적용 상태를 그대로 표시하고, 스피커 모드 공간감을 모든 폭에서 쓸 수 있습니다.",
       "mandatory": false
     },
     "android": {
@@ -24,11 +24,11 @@
   },
   "announcements": [
     {
-      "id": "update-0.8.4",
+      "id": "update-0.8.6",
       "type": "banner",
-      "title": "v0.8.4 업데이트 — 제보 집중 수정(DSD 장치 호환성·실행 안정성)",
-      "body": "보내주신 제보를 집중 수정했습니다. 일부 DAC에서 스트리밍 DSD가 켜자마자 꺼지거나 'DAC 연결 끊어짐'이 반복되던 문제를 근본 수정하고(같은 충돌이 재발해도 자동으로 안전모드 재시도), DSD 재생 시작이 십수 초 걸리던 문제와 화면이 시작 직후 종료되는 환경의 자동 복구를 추가했습니다. 제보해 주신 분들께 감사드립니다 — 문제가 계속되면 설정 > 의견 보내기로 알려주세요.",
-      "url": "https://github.com/Ghostseller/CastFi/releases/tag/v0.8.4"
+      "title": "v0.8.6 업데이트 — 애플뮤직 DSD 자동화·신호 경로 정직화·공간감 확장",
+      "body": "애플뮤직(외부 앱)의 DSD 업샘플이 자동으로 동작합니다 — DAC와 같은 장치로 재생 중이어도 재생을 잠시 자동 이동시킨 뒤 DSD 출력을 시작하고(켠 뒤 20~30초), 실패해도 무음으로 남지 않고 원인을 안내하며 원래 재생으로 복귀합니다. 신호 경로(음질)가 실제 출력 방식·장치와 FIR EQ 준비/적용 상태를 그대로 보여주고, 스피커 모드의 공간감을 니어필드·와이드를 포함한 모든 폭에서 쓸 수 있게 되었습니다. 문제가 있으면 설정 > 의견 보내기로 알려주세요.",
+      "url": "https://github.com/Ghostseller/CastFi/releases/tag/v0.8.6"
     },
     {
       "id": "update-0.7.1",
