@@ -1,10 +1,10 @@
 {
   "update": {
     "pc": {
-      "version": "0.8.7",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.8.7/CastFi-Setup-0.8.7.exe",
-      "sha256": "A294762C008260B31C0EEB766523C138CD40B147B3AC81299B19A47339694F16",
-      "notes": "제보 버그 수정 — AI로 EQ 만들기(항상 같은 값 적용) · DSD 업샘플 자동 재시도(무한 반복 끊김 → 3회 후 안내·무음 잔존 수정) · 애플뮤직 내장 열기 무반응 · 익명 사용 통계 자체 인프라 전환(수집 항목·익명 원칙 동일)",
+      "version": "0.8.8",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.8.8/CastFi-Setup-0.8.8.exe",
+      "sha256": "B19D5AB43DA0150AAD5110BE28AC15ED2C12A1DED5787B4C61E7028BA1FEDEF6",
+      "notes": "제보 버그 수정 — DSD 업샘플 중 원본 소리가 스피커로 새던 문제(음소거 불가 환경 자동 전환) · CUDA가 설치돼 있는데 인식되지 않던 문제 근본수정(재설치·환경변수 어긋난 PC 포함) · DSD 사용 중 윈도우 출력 목록에서 DAC가 사라져 보일 때 안내 표시 · 가상 케이블로 앱 출력 보내기 선택이 무시되던 문제 · 영어 UI 전면 완성 · 오류 자동 집계 개선",
       "mandatory": false
     },
     "android": {
@@ -24,11 +24,11 @@
   },
   "announcements": [
     {
-      "id": "update-0.8.7",
+      "id": "update-0.8.8",
       "type": "banner",
-      "title": "v0.8.7 업데이트 — 제보하신 버그 수정",
-      "body": "제보해 주신 문제들을 수정했습니다. ① AI로 EQ 만들기에서 항상 같은 예시 값이 적용되던 문제(프롬프트/답변 구분 안내) ② DSD 업샘플이 열리지 않을 때 무한 재시도로 음악이 주기적으로 끊기던 문제(3회 후 원인 안내·무음 잔존 수정) ③ 애플뮤직 '내부에서 열기'가 무반응이던 문제. 익명 사용 통계는 자체 인프라로 전환했습니다(수집 항목·익명 원칙은 동일·끄기 설정 유지).",
-      "url": "https://github.com/Ghostseller/CastFi/releases/tag/v0.8.6",
+      "title": "v0.8.8 업데이트 — 제보하신 버그 수정 · 영어 지원 완성",
+      "body": "제보해 주신 문제들을 수정했습니다. ① DSD 업샘플 중 원본 소리가 스피커로 크게 새던 문제 — 음소거가 안 되는 환경에서는 안전한 방식으로 자동 전환합니다. ② CUDA가 설치돼 있는데도 인식되지 않던 문제를 근본 수정했습니다(프로그램 재설치·환경변수가 어긋난 PC 포함). ③ DSD 사용 중 윈도우 소리 설정에서 DAC가 사라져 보이는 이유를 앱에서 안내합니다(정상 동작). ④ DSD 설정에서 앱 출력을 가상 케이블로 보내는 선택이 무시되던 문제를 수정했습니다. 또한 영어 모드에서 한국어가 남아 있던 화면들을 전면 정리했고, 오류 자동 집계를 개선했습니다(익명 원칙 동일·끄기 설정 유지).",
+      "url": "https://github.com/Ghostseller/CastFi/releases/tag/v0.8.8",
       "importance": "normal"
     },
     {
