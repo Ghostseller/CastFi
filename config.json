@@ -1,10 +1,10 @@
 {
   "update": {
     "pc": {
-      "version": "0.8.6",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.8.6/CastFi-Setup-0.8.6.exe",
-      "sha256": "0F95E95C15CA6ECA712041352C9B5E97A380B5444A3A010C09C955399D181089",
-      "notes": "애플뮤직(외부 앱) DSD 업샘플 자동화 — DAC와 같은 장치로 재생 중이어도 자동으로 동작합니다(켠 뒤 20~30초·실패 시 원인 안내와 함께 안전 복귀). 신호 경로가 실제 출력 방식·장치와 FIR EQ 준비/적용 상태를 그대로 표시하고, 스피커 모드 공간감을 모든 폭에서 쓸 수 있습니다.",
+      "version": "0.8.7",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.8.7/CastFi-Setup-0.8.7.exe",
+      "sha256": "A294762C008260B31C0EEB766523C138CD40B147B3AC81299B19A47339694F16",
+      "notes": "제보 버그 수정 — AI로 EQ 만들기(항상 같은 값 적용) · DSD 업샘플 자동 재시도(무한 반복 끊김 → 3회 후 안내·무음 잔존 수정) · 애플뮤직 내장 열기 무반응 · 익명 사용 통계 자체 인프라 전환(수집 항목·익명 원칙 동일)",
       "mandatory": false
     },
     "android": {
@@ -24,11 +24,12 @@
   },
   "announcements": [
     {
-      "id": "update-0.8.6",
+      "id": "update-0.8.7",
       "type": "banner",
-      "title": "v0.8.6 업데이트 — 애플뮤직 DSD 자동화·신호 경로 정직화·공간감 확장",
-      "body": "애플뮤직(외부 앱)의 DSD 업샘플이 자동으로 동작합니다 — DAC와 같은 장치로 재생 중이어도 재생을 잠시 자동 이동시킨 뒤 DSD 출력을 시작하고(켠 뒤 20~30초), 실패해도 무음으로 남지 않고 원인을 안내하며 원래 재생으로 복귀합니다. 신호 경로(음질)가 실제 출력 방식·장치와 FIR EQ 준비/적용 상태를 그대로 보여주고, 스피커 모드의 공간감을 니어필드·와이드를 포함한 모든 폭에서 쓸 수 있게 되었습니다. 문제가 있으면 설정 > 의견 보내기로 알려주세요.",
-      "url": "https://github.com/Ghostseller/CastFi/releases/tag/v0.8.6"
+      "title": "v0.8.7 업데이트 — 제보하신 버그 수정",
+      "body": "제보해 주신 문제들을 수정했습니다. ① AI로 EQ 만들기에서 항상 같은 예시 값이 적용되던 문제(프롬프트/답변 구분 안내) ② DSD 업샘플이 열리지 않을 때 무한 재시도로 음악이 주기적으로 끊기던 문제(3회 후 원인 안내·무음 잔존 수정) ③ 애플뮤직 '내부에서 열기'가 무반응이던 문제. 익명 사용 통계는 자체 인프라로 전환했습니다(수집 항목·익명 원칙은 동일·끄기 설정 유지).",
+      "url": "https://github.com/Ghostseller/CastFi/releases/tag/v0.8.6",
+      "importance": "normal"
     },
     {
       "id": "update-0.7.1",
@@ -66,7 +67,7 @@
   "texts": {},
   "telemetry": {
     "enabled": true,
-    "aptabaseKey": "A-US-0325877415"
+    "ingestUrl": "https://castfi-telemetry.banessayuu.workers.dev"
   },
   "errors": {
     "enabled": false
