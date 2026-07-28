@@ -1,10 +1,10 @@
 {
   "update": {
     "pc": {
-      "version": "0.9.0",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.9.0/CastFi-Setup-0.9.0.exe",
-      "sha256": "21B052920763035D2D25F5C1BA7EEA4D07F0DD57A99E742C451E0BB21927F55C",
-      "notes": "업샘플링이 더 이상 ASIO 전용이 아닙니다 — 제조사 ASIO 드라이버가 없는 DAC 에서도 PCM 업샘플·DSD 업스케일을 쓸 수 있고, PCM 업샘플이 그래픽카드를 사용해 고른 필터를 그대로 실행합니다. DSD 출력 방식(자동/ASIO Native/WASAPI DoP) 선택과 필터 조정 안내도 추가됐습니다.",
+      "version": "0.9.2",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.9.2/CastFi-Setup-0.9.2.exe",
+      "sha256": "22C68EBB8F2E36696B450F1AE6F834109DD8293B90450E2E07CACE5103CD29FE",
+      "notes": "일부 DAC 에서 DSD 파일이 잡음이 나거나 그냥 PCM 으로 바뀌던 문제를 고쳤습니다. 이제 기기가 원본 DSD 를 받을 수 있는지 확인된 경우에만 원본 그대로 보내고, 보낼 수 없으면 그 이유를 알려드립니다. 스트리밍을 DSD 로 변환할 때 쓰는 기준 레이트도 로컬 파일 재생과 같은 44.1kHz 계열로 맞춰 호환성을 높였습니다.",
       "mandatory": false
     },
     "android": {
@@ -24,10 +24,10 @@
   },
   "announcements": [
     {
-      "id": "update-0.9.0",
+      "id": "update-0.9.2",
       "type": "banner",
-      "title": "v0.9.0 업데이트 — 업샘플링이 ASIO 없이도 동작합니다",
-      "body": "제조사 ASIO 드라이버가 없는 DAC 에서도 PCM 업샘플과 DSD 업스케일을 쓸 수 있어요. PCM 업샘플은 그래픽카드를 사용해 고르신 필터를 그대로 실행하고(없으면 CPU 로 처리하며 이때만 필터가 조정돼요), DSD 출력 방식을 자동·ASIO Native·WASAPI DoP 중에서 고를 수 있어요. 필터가 조정되거나 배율을 쓸 수 없을 때는 조용히 바꾸지 않고 알려드려요.",
+      "title": "v0.9.2 업데이트 — DSD 원본 출력을 기기마다 정확히 판단합니다",
+      "body": "일부 DAC 에서 DSD 파일이 잡음이 나거나 조용히 PCM 으로 바뀌던 문제를 고쳤어요. 이제 기기가 원본 DSD 를 받을 수 있다고 확인된 경우에만 원본 그대로 보내고, 보낼 수 없으면 왜 안 되는지 재생 화면에 알려드려요(필요하면 그 자리에서 [DoP 시험] 을 할 수 있어요). 기기와 무관하게 하나로 고정돼 있던 '지원 한도'도 없앴어요 — 이제 기기마다 실제로 확인된 값을 씁니다. 스트리밍을 DSD 로 변환할 때 쓰는 기준 레이트는 로컬 파일 재생과 같은 44.1kHz 계열로 맞췄어요.",
       "url": "https://github.com/Ghostseller/CastFi/releases/tag/v0.8.9",
       "importance": "normal"
     },
