@@ -1,10 +1,10 @@
 {
   "update": {
     "pc": {
-      "version": "0.8.9",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.8.9/CastFi-Setup-0.8.9.exe",
-      "sha256": "32554D4669461D5E456EF5A41285931FF29D874A5695048EC3A6FEF23F8E5FF6",
-      "notes": "제보 버그 수정 — DSD 업스케일이 계속 취소되던 문제(DAC 제조사 ASIO 드라이버 안내) · 대용량 라이브러리 스캔 시 디스크 사용량 급증(앨범아트 캐시 재설계·수십 배 절감) · 파일 드래그&드롭은 플레이큐에 추가만(자동재생·화면 이동 없음) · 정밀 EQ 그래프 양 끝 값 정확 반영 · AI EQ 안정화(예시 반복 차단·영어 프롬프트) · 소리 경로 자가진단 개선",
+      "version": "0.9.0",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.9.0/CastFi-Setup-0.9.0.exe",
+      "sha256": "21B052920763035D2D25F5C1BA7EEA4D07F0DD57A99E742C451E0BB21927F55C",
+      "notes": "업샘플링이 더 이상 ASIO 전용이 아닙니다 — 제조사 ASIO 드라이버가 없는 DAC 에서도 PCM 업샘플·DSD 업스케일을 쓸 수 있고, PCM 업샘플이 그래픽카드를 사용해 고른 필터를 그대로 실행합니다. DSD 출력 방식(자동/ASIO Native/WASAPI DoP) 선택과 필터 조정 안내도 추가됐습니다.",
       "mandatory": false
     },
     "android": {
@@ -24,10 +24,10 @@
   },
   "announcements": [
     {
-      "id": "update-0.8.9",
+      "id": "update-0.9.0",
       "type": "banner",
-      "title": "v0.8.9 업데이트 — 제보하신 버그 수정",
-      "body": "제보해 주신 문제들을 수정했습니다. ① DSD 업스케일이 시작되지 않고 계속 취소되던 문제 — DAC 전용 ASIO 드라이버가 없으면 이제 원인을 바로 안내합니다. ② 대용량 라이브러리(NAS 등) 스캔 시 디스크 사용량이 크게 늘던 문제 — 앨범아트 캐시를 재설계해 수십 배 줄였고, 설정 › 저장공간에서 라이브러리 DB와 캐시 위치를 확인할 수 있어요(원본 음악 파일은 변경하지 않습니다). ③ 파일 드래그&드롭은 이제 플레이큐에 추가만 합니다(자동재생·화면 이동 없음). ④ 정밀 EQ 그래프 양 끝(20Hz) 값이 정확히 반영됩니다. ⑤ AI로 EQ 만들기에서 항상 같은 값이 적용되던 경우를 차단하고, 영어 모드에선 AI 프롬프트도 영어로 나갑니다.",
+      "title": "v0.9.0 업데이트 — 업샘플링이 ASIO 없이도 동작합니다",
+      "body": "제조사 ASIO 드라이버가 없는 DAC 에서도 PCM 업샘플과 DSD 업스케일을 쓸 수 있어요. PCM 업샘플은 그래픽카드를 사용해 고르신 필터를 그대로 실행하고(없으면 CPU 로 처리하며 이때만 필터가 조정돼요), DSD 출력 방식을 자동·ASIO Native·WASAPI DoP 중에서 고를 수 있어요. 필터가 조정되거나 배율을 쓸 수 없을 때는 조용히 바꾸지 않고 알려드려요.",
       "url": "https://github.com/Ghostseller/CastFi/releases/tag/v0.8.9",
       "importance": "normal"
     },
