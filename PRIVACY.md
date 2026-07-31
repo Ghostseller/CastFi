@@ -5,21 +5,31 @@
 CastFi는 Windows용 음악 재생·제어 및 헤드폰/이어폰 음향 보정 앱입니다. CastFi는 사용자의 개인정보를 수집하지 않는 것을 원칙으로 합니다.
 
 1. **수집하지 않는 것**: 이름·이메일·전화번호·계정 정보 등 개인 식별 정보, 재생 곡 목록의 개인 연계, 디바이스 고정 식별자.
-2. **익명 사용 통계(선택)**: 통계가 활성화된 경우에 한해, 앱 실행 및 자주 쓰는 기능, 무작위 세션 ID(30분 비활성 시 자동 갱신), 운영체제 종류·버전, 앱 버전, 언어 설정만 익명으로 수집해 분석 서비스(Aptabase)로 전송합니다. 개인을 식별할 수 있는 항목은 포함하지 않습니다. 별도 설정이 없으면 비활성이며, 설정에서 언제든 끌 수 있습니다.
-3. **로컬 저장**: EQ·환경설정 등은 사용자 PC에만 저장되며 외부로 전송되지 않습니다.
-4. **외부 음악 서비스**: YouTube Music·Spotify 등은 각 서비스에 직접 로그인하며 해당 서비스의 개인정보 처리방침이 적용됩니다. CastFi는 사용자의 로그인 자격 증명을 별도 서버로 전송하지 않습니다.
-5. **문의**: support@castplan.net
+2. **익명 사용 통계(선택)**: 통계가 활성화된 경우에 한해, 앱 실행 및 자주 쓰는 기능, 무작위 세션 ID(30분 비활성 시 자동 갱신), 운영체제 종류·버전, 앱 버전, 언어 설정만 익명으로 수집해 CastFi가 직접 운영하는 수신 서버로 전송합니다. 개인을 식별할 수 있는 항목은 포함하지 않습니다. 별도 설정이 없으면 비활성이며, 설정에서 언제든 끌 수 있습니다.
+3. **국가(2자리 코드)**: 위 통계가 활성화된 경우, 수신 서버가 접속 지점에서 판단한 **국가 코드 2자리**(예: `KR`)만 이벤트에 함께 기록합니다. 앱이 보내는 값이 아니라 서버가 부여하며, 판단이 불가능하면 `XX`로 기록합니다.
+   - **저장하지 않는 것**: IP 주소, 도시·지역명, 위도·경도, GPS, 통신사·네트워크 사업자 정보. IP는 국가 판단에만 쓰이고 어떤 형태로도 저장·전달되지 않습니다.
+   - 국가 코드만으로는 개인을 식별할 수 없으며, 국가별 사용 규모 파악에만 사용합니다.
+4. **로컬 저장**: EQ·환경설정 등은 사용자 PC에만 저장되며 외부로 전송되지 않습니다.
+5. **외부 음악 서비스**: YouTube Music·Spotify 등은 각 서비스에 직접 로그인하며 해당 서비스의 개인정보 처리방침이 적용됩니다. CastFi는 사용자의 로그인 자격 증명을 별도 서버로 전송하지 않습니다.
+6. **문의**: support@castplan.net
 
 ## English
 
 CastFi is a Windows app for music playback/control and headphone/earphone sound tuning. CastFi is designed not to collect personal information.
 
 1. **Not collected**: personal identifiers (name, email, phone, account), personal linkage of played tracks, or a persistent device identifier.
-2. **Anonymous usage stats (optional)**: only when enabled, we collect anonymous events (app open, frequently used features), a random session ID (renewed after 30 minutes of inactivity), OS name/version, app version, and locale, sent to an analytics service (Aptabase). No personally identifying data is included. It is off unless configured, and can be turned off anytime in settings.
-3. **Local storage**: EQ settings and preferences are stored only on your PC.
-4. **External music services**: YouTube Music, Spotify, etc. are logged into directly; their respective privacy policies apply. CastFi does not send your sign-in credentials to any separate server.
-5. **Contact**: support@castplan.net
+2. **Anonymous usage stats (optional)**: only when enabled, we collect anonymous events (app open, frequently used features), a random session ID (renewed after 30 minutes of inactivity), OS name/version, app version, and locale, sent to a receiving server operated by CastFi. No personally identifying data is included. It is off unless configured, and can be turned off anytime in settings.
+3. **Country (two-letter code)**: when the stats above are enabled, the receiving server records a **two-letter country code** (e.g. `KR`) determined at the point of connection. It is assigned by the server rather than sent by the app, and is recorded as `XX` when it cannot be determined.
+   - **Not stored**: IP address, city or region name, latitude/longitude, GPS, or carrier/network-operator details. The IP is used only to determine the country and is never stored or passed on in any form.
+   - A country code alone cannot identify an individual; it is used only to understand usage by country.
+4. **Local storage**: EQ settings and preferences are stored only on your PC.
+5. **External music services**: YouTube Music, Spotify, etc. are logged into directly; their respective privacy policies apply. CastFi does not send your sign-in credentials to any separate server.
+6. **Contact**: support@castplan.net
 
 ---
 
-최종 업데이트 / Last updated: 2026-06-08
+최종 업데이트 / Last updated: 2026-07-31
+
+변경 이력 / Change log
+- 2026-07-31: 통계 수신처를 자체 운영 서버로 정정(이전 표기: Aptabase — v0.8.7에서 전환됨), 국가 코드 항목 신설.
+  / Corrected the stats receiver to a self-operated server (previously stated as Aptabase; switched in v0.8.7), and added the country-code section.
