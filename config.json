@@ -1,10 +1,10 @@
 {
   "update": {
     "pc": {
-      "version": "0.9.3",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.9.3/CastFi-Setup-0.9.3.exe",
-      "sha256": "EA55DF05C75C7C985C4CCC03F6F294CAACB3A5034BEA509B5866696868FDCB65",
-      "notes": "CastFi PC 0.9.3 과 CastFi Remote 0.3.0 은 함께 업데이트해 주세요. DSD 변환에서 44.1k/48k 계열을 직접 고를 수 있고 실제 출력 레이트를 정확히 표시합니다. CUDA DSD 변환이 끝난 뒤 작업이 간헐적으로 끝나지 않던 문제, PCM ASIO 실패 반복과 장치 음소거, 곡 전환 시 진행 시간 누적, 라이트 테마 제보창 가독성을 고쳤습니다.",
+      "version": "0.9.4",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.9.4/CastFi-Setup-0.9.4.exe",
+      "sha256": "4F0201CDAF560E986868D40872857B005BC74EC21B848A2F59203E327FD0FA87",
+      "notes": "DSD 출력이 어떤 경로로 나가는지를 한 곳에서 정합니다. DAC 마다 PCM 출력과 DSD 출력을 따로 고를 수 있고 그 선택이 로컬 재생과 스트리밍에 똑같이 적용됩니다. 「ASIO 사용 허용」을 꺼 두면 스트리밍 DSD 에서도 ASIO 가 DAC 를 독점하지 않습니다. 전용 ASIO 드라이버가 없는 DAC 에서 DSD 업샘플이 간헐적으로 실패하며 드라이버 설치를 잘못 안내하던 문제와, 시작하지 못했는데 스위치가 켜진 채 남던 문제를 고쳤습니다. CastFi Remote 0.3.0 과 그대로 호환됩니다.",
       "mandatory": false
     },
     "android": {
@@ -24,10 +24,10 @@
   },
   "announcements": [
     {
-      "id": "update-0.9.3",
+      "id": "update-0.9.4",
       "type": "banner",
-      "title": "v0.9.3 업데이트 — PC 와 Remote 를 함께 업데이트해 주세요",
-      "body": "이번 버전은 PC 0.9.3 과 Android Remote 0.3.0 조합을 기준으로 검증했습니다. 이전 버전과 섞어 쓰면 일부 기능의 호환성을 보장하지 않으니 둘 다 최신으로 올려 주세요.\n\n· DSD 변환에서 44.1k / 48k 계열을 직접 선택하고 실제 출력 레이트를 정확히 표시합니다\n· CUDA DSD 변환 완료 후 간헐적으로 작업이 끝나지 않던 문제를 고쳤습니다\n· PCM ASIO 실패 반복과 장치 음소거 문제를 고쳤습니다\n· 포터블 DAC 의 DoP 형식 판정·복원 안전성을 개선했습니다\n· Apple Music 외부 재생의 볼륨 출렁임을 완화했습니다\n· 곡 전환 시 진행 시간이 누적되던 문제를 고쳤습니다\n· 라이트 테마 제보 입력창 가독성을 고쳤습니다\n· PC·Remote 상태 동기화와 재연결 안정성을 개선했습니다\n\nTopping D90III 관련 기존 3건은 이번 수정과 다른 원인으로 판정됐으며, 이번 버전에서 해결됐다고 보장하지 않습니다.",
+      "title": "v0.9.4 업데이트 — DSD 출력 경로 정리 · ASIO 사용 허용이 스트리밍에도 적용",
+      "body": "DAC 마다 PCM/DSD 출력 방식을 고르면 로컬 재생과 스트리밍이 같은 선택을 따릅니다. 「ASIO 사용 허용」을 꺼 두면 어떤 경우에도 ASIO 가 DAC 를 독점하지 않습니다. 전용 ASIO 드라이버가 없는 DAC 에서도 DSD 업샘플이 정상 동작합니다. CastFi Remote(Android) 0.3.0 은 그대로 쓰셔도 됩니다.",
       "url": "https://github.com/Ghostseller/CastFi/releases/tag/v0.8.9",
       "importance": "normal"
     },
