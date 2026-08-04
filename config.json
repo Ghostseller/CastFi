@@ -1,10 +1,10 @@
 {
   "update": {
     "pc": {
-      "version": "0.9.5",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.9.5/CastFi-Setup-0.9.5.exe",
-      "sha256": "1BBDE1A00ACAE56E4EB4BD6F6B953093223DE65B683F4A0104000F3ECB7AC2C7",
-      "notes": "멈춘 DAC 이 출력 장치 목록에서 사라지던 문제를 고쳤습니다. 「영상 선택」에서 고른 뮤직비디오가 재생되지 않고 다른 영상이 나오던 문제를 고쳤습니다. 오류 제보에 담기는 진단 기록을 개선해 앞으로 접수되는 제보의 원인 파악이 정확해집니다.",
+      "version": "0.9.6",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.9.6/CastFi-Setup-0.9.6.exe",
+      "sha256": "93BF44013B25C0DB272ED2B95E2C855A0070D6A71529F746584E88D82AC95660",
+      "notes": "Windows 로그인 자동 실행 직후 그래픽 드라이버가 불안정해질 수 있던 문제를 수정했습니다. Amanero DAC 드라이버 재설치 후 미인식, 일부 AMD 그래픽 환경 앱 종료, 스트리밍 DSD 시작 시 잡음, DSD 모듈레이터 변경 미적용 문제도 고쳤습니다.",
       "mandatory": false
     },
     "android": {
@@ -24,11 +24,11 @@
   },
   "announcements": [
     {
-      "id": "update-0.9.5",
+      "id": "update-0.9.6",
       "type": "banner",
-      "title": "v0.9.5 업데이트 — 멈춘 DAC 이 목록에서 사라지던 문제 · 선택한 뮤직비디오 재생",
-      "body": "DAC 이 한 번 멈추면 그 뒤로 출력 장치 목록에서 사라져 PC 를 다시 켤 때까지 DSD 출력에 쓸 수 없던 문제를 고쳤습니다. 이제 장치가 회복되면 자동으로 다시 쓸 수 있습니다. 가사·뮤직비디오 화면에서 목록 맨 위의 공식 뮤직비디오를 골라도 다른 영상이 나오던 문제도 고쳤습니다. 오류 제보에 담기는 진단 기록도 개선했습니다.",
-      "url": "https://github.com/Ghostseller/CastFi/releases/tag/v0.9.5",
+      "title": "v0.9.6 업데이트 — 자동 실행 직후 그래픽 드라이버 안정화 · DAC 잡음/인식 수정",
+      "body": "Windows 로그인 자동 실행 직후 그래픽 드라이버가 불안정해질 수 있던 문제를 수정했습니다. 시작 직후에는 가속 장치 확인을 잠시 미루며, 그동안에도 재생과 변환은 바로 사용할 수 있습니다. Amanero 계열 DAC 드라이버 재설치 후 미인식, 일부 AMD 그래픽 환경 앱 종료, 스트리밍 DSD 시작 시 잡음(Cayin 등), DSD 모듈레이터 변경 미적용 문제도 함께 고쳤습니다. Amanero 사용 중 DSD 업샘플링이 꺼져 있었다면 업데이트 후 다시 켜 주세요.",
+      "url": "https://github.com/Ghostseller/CastFi/releases/tag/v0.9.6",
       "importance": "normal"
     },
     {
