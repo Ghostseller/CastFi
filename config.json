@@ -1,10 +1,10 @@
 {
   "update": {
     "pc": {
-      "version": "0.9.4",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.9.4/CastFi-Setup-0.9.4.exe",
-      "sha256": "4F0201CDAF560E986868D40872857B005BC74EC21B848A2F59203E327FD0FA87",
-      "notes": "DSD 출력이 어떤 경로로 나가는지를 한 곳에서 정합니다. DAC 마다 PCM 출력과 DSD 출력을 따로 고를 수 있고 그 선택이 로컬 재생과 스트리밍에 똑같이 적용됩니다. 「ASIO 사용 허용」을 꺼 두면 스트리밍 DSD 에서도 ASIO 가 DAC 를 독점하지 않습니다. 전용 ASIO 드라이버가 없는 DAC 에서 DSD 업샘플이 간헐적으로 실패하며 드라이버 설치를 잘못 안내하던 문제와, 시작하지 못했는데 스위치가 켜진 채 남던 문제를 고쳤습니다. CastFi Remote 0.3.0 과 그대로 호환됩니다.",
+      "version": "0.9.5",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.9.5/CastFi-Setup-0.9.5.exe",
+      "sha256": "1BBDE1A00ACAE56E4EB4BD6F6B953093223DE65B683F4A0104000F3ECB7AC2C7",
+      "notes": "멈춘 DAC 이 출력 장치 목록에서 사라지던 문제를 고쳤습니다. 「영상 선택」에서 고른 뮤직비디오가 재생되지 않고 다른 영상이 나오던 문제를 고쳤습니다. 오류 제보에 담기는 진단 기록을 개선해 앞으로 접수되는 제보의 원인 파악이 정확해집니다.",
       "mandatory": false
     },
     "android": {
@@ -24,11 +24,11 @@
   },
   "announcements": [
     {
-      "id": "update-0.9.4",
+      "id": "update-0.9.5",
       "type": "banner",
-      "title": "v0.9.4 업데이트 — DSD 출력 경로 정리 · ASIO 사용 허용이 스트리밍에도 적용",
-      "body": "DAC 마다 PCM/DSD 출력 방식을 고르면 로컬 재생과 스트리밍이 같은 선택을 따릅니다. 「ASIO 사용 허용」을 꺼 두면 어떤 경우에도 ASIO 가 DAC 를 독점하지 않습니다. 전용 ASIO 드라이버가 없는 DAC 에서도 DSD 업샘플이 정상 동작합니다. CastFi Remote(Android) 0.3.0 은 그대로 쓰셔도 됩니다.",
-      "url": "https://github.com/Ghostseller/CastFi/releases/tag/v0.8.9",
+      "title": "v0.9.5 업데이트 — 멈춘 DAC 이 목록에서 사라지던 문제 · 선택한 뮤직비디오 재생",
+      "body": "DAC 이 한 번 멈추면 그 뒤로 출력 장치 목록에서 사라져 PC 를 다시 켤 때까지 DSD 출력에 쓸 수 없던 문제를 고쳤습니다. 이제 장치가 회복되면 자동으로 다시 쓸 수 있습니다. 가사·뮤직비디오 화면에서 목록 맨 위의 공식 뮤직비디오를 골라도 다른 영상이 나오던 문제도 고쳤습니다. 오류 제보에 담기는 진단 기록도 개선했습니다.",
+      "url": "https://github.com/Ghostseller/CastFi/releases/tag/v0.9.5",
       "importance": "normal"
     },
     {
