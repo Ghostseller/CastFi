@@ -1,10 +1,10 @@
 {
   "update": {
     "pc": {
-      "version": "0.9.6",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.9.6/CastFi-Setup-0.9.6.exe",
-      "sha256": "93BF44013B25C0DB272ED2B95E2C855A0070D6A71529F746584E88D82AC95660",
-      "notes": "Windows 로그인 자동 실행 직후 그래픽 드라이버가 불안정해질 수 있던 문제를 수정했습니다. Amanero DAC 드라이버 재설치 후 미인식, 일부 AMD 그래픽 환경 앱 종료, 스트리밍 DSD 시작 시 잡음, DSD 모듈레이터 변경 미적용 문제도 고쳤습니다.",
+      "version": "0.9.7",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.9.7/CastFi-Setup-0.9.7.exe",
+      "sha256": "23909C205695839BDC240A408EA4D563489EC0C311778C0A9D774EFDD083BF4D",
+      "notes": "새 기능 「음장효과」 — 홈 화면의 EFFECT 버튼으로 BASS+ · CLEAR+ · WIDE+ 와 스피커 모드를 한 번에 켜고 끕니다. DSD 업샘플링이 설정 변경 중 저절로 꺼지던 문제, GPU 가속이 실행마다 3분간 묶이던 문제, 처리 중 BIT-PERFECT 오표시, 스트리밍 업샘플링이 안내 없이 꺼지던 문제를 고쳤습니다.",
       "mandatory": false
     },
     "android": {
@@ -24,11 +24,11 @@
   },
   "announcements": [
     {
-      "id": "update-0.9.6",
+      "id": "update-0.9.7",
       "type": "banner",
-      "title": "v0.9.6 업데이트 — 자동 실행 직후 그래픽 드라이버 안정화 · DAC 잡음/인식 수정",
-      "body": "Windows 로그인 자동 실행 직후 그래픽 드라이버가 불안정해질 수 있던 문제를 수정했습니다. 시작 직후에는 가속 장치 확인을 잠시 미루며, 그동안에도 재생과 변환은 바로 사용할 수 있습니다. Amanero 계열 DAC 드라이버 재설치 후 미인식, 일부 AMD 그래픽 환경 앱 종료, 스트리밍 DSD 시작 시 잡음(Cayin 등), DSD 모듈레이터 변경 미적용 문제도 함께 고쳤습니다. Amanero 사용 중 DSD 업샘플링이 꺼져 있었다면 업데이트 후 다시 켜 주세요.",
-      "url": "https://github.com/Ghostseller/CastFi/releases/tag/v0.9.6",
+      "title": "v0.9.7 업데이트 — 새 기능 「음장효과」 · DSD 업샘플 꺼짐 · GPU 가속 수정",
+      "body": "홈 화면 음질 표시 오른쪽에 EFFECT 버튼이 새로 생겼습니다. BASS+(묵직하고 단단한 저음) · CLEAR+(또렷한 보컬과 디테일) · BASS+CLEAR · WIDE+(넓은 무대)와 스피커 모드(NEARFIELD/STUDIO/WIDE)를 클릭 한 번으로 켜고 끌 수 있고, FIR EQ 설정 화면과 서로 동기화됩니다. 또한 공간 효과를 켜고 끄거나 목표 레이트를 적용할 때, 일시정지 후 재생할 때 DSD 업샘플링이 저절로 꺼지던 문제를 근본 수정했고, GPU 가속이 프로그램을 켤 때마다 3분간 묶이던 문제, FIR EQ 적용 중 BIT-PERFECT 오표시, 스트리밍 업샘플링이 아무 안내 없이 꺼지던 문제도 고쳤습니다.",
+      "url": "https://github.com/Ghostseller/CastFi/releases/tag/v0.9.7",
       "importance": "normal"
     },
     {
