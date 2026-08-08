@@ -1,76 +1,74 @@
 {
-  "update": {
-    "pc": {
-      "version": "0.9.7",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.9.7/CastFi-Setup-0.9.7.exe",
-      "sha256": "23909C205695839BDC240A408EA4D563489EC0C311778C0A9D774EFDD083BF4D",
-      "notes": "새 기능 「음장효과」 — 홈 화면의 EFFECT 버튼으로 BASS+ · CLEAR+ · WIDE+ 와 스피커 모드를 한 번에 켜고 끕니다. DSD 업샘플링이 설정 변경 중 저절로 꺼지던 문제, GPU 가속이 실행마다 3분간 묶이던 문제, 처리 중 BIT-PERFECT 오표시, 스트리밍 업샘플링이 안내 없이 꺼지던 문제를 고쳤습니다.",
-      "mandatory": false
-    },
-    "android": {
-      "versionCode": 1,
-      "version": "0.1.0",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/android-v0.1.0/CastFi-0.1.0.apk",
-      "notes": "CastFi 안드로이드 첫 릴리스 — PC 원격 제어.",
-      "mandatory": false
-    }
+ "update": {
+  "pc": {
+   "version": "0.9.8",
+   "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.9.8/CastFi-Setup-0.9.8.exe",
+   "sha256": "624B27D7B3C6F3387D327D5AB46E0BD08BC6A1F557F67A75C8677F863E825946",
+   "notes": "내 음악에 「폴더」 탐색이 추가됐습니다 — 디스크에 정리해 둔 폴더 구조 그대로 찾아볼 수 있고, 태그가 없는 파일도 파일명으로 보입니다. Adaptive 모듈레이터를 개선하고, 설정 화면의 모듈레이터 측정값이 실제보다 낮게 표시되던 것을 바로잡았습니다. 일시정지 후 DSD 가 PCM 으로 떨어지던 문제, 비트퍼펙트 환경에서 업샘플링이 스스로 꺼지던 문제, 아스텔앤컨·KANN ASIO 인식, 영어 화면이 표시되지 않던 문제를 고쳤습니다.",
+   "mandatory": false
   },
-  "ads": {
-    "enabled": false
+  "android": {
+   "versionCode": 1,
+   "version": "0.1.0",
+   "url": "https://github.com/Ghostseller/CastFi/releases/download/android-v0.1.0/CastFi-0.1.0.apk",
+   "notes": "CastFi 안드로이드 첫 릴리스 — PC 원격 제어.",
+   "mandatory": false
+  }
+ },
+ "ads": {
+  "enabled": false
+ },
+ "cast": {
+  "enabled": false,
+  "url": "https://castfi-cast.banessayuu.workers.dev"
+ },
+ "announcements": [
+  {
+   "id": "update-0.9.8",
+   "type": "banner",
+   "title": "v0.9.8 업데이트 — 내 음악 「폴더」 탐색 · Adaptive 개선 · 제보 수정",
+   "body": "내 음악에 「폴더」 탭이 생겼습니다. 디스크에 정리해 둔 폴더 구조 그대로 열어 하위 폴더로 내려가며 재생할 수 있고, 태그가 없는 파일도 파일명 그대로 보입니다. 안드로이드 앱에서도 같은 방식으로 쓸 수 있습니다.\n\nDSD 업샘플링의 Adaptive 모듈레이터가 더 높은 변조 정밀도로 동작하고, 큰 음량 구간에서는 안정성 보호가 개입합니다. 설정 화면에 표시되던 모듈레이터 측정값이 실제보다 낮게 나오던 문제도 바로잡았습니다 — 소리가 바뀐 것이 아니라 표시되던 숫자가 실제 성능을 반영하도록 고친 것입니다.\n\n그 밖에 일시정지 후 재생을 재개하면 DSD 가 PCM 으로 떨어지던 문제, 비트퍼펙트 환경에서 업샘플링이 재생 중 스스로 꺼지던 문제, 아스텔앤컨·KANN 계열 ASIO 드라이버 인식, 영어로 설정했을 때 화면이 뜨지 않던 문제를 고쳤습니다. 기존 라이브러리·설정·재생큐는 그대로 유지됩니다."
   },
-  "cast": {
-    "enabled": false,
-    "url": "https://castfi-cast.banessayuu.workers.dev"
+  {
+   "id": "update-0.7.1",
+   "type": "banner",
+   "title": "v0.7.1 — ASIO 출력 지원 (0.7 최대 변화) · 네트워크 DSD 안정화 · 출력 장치 라우팅",
+   "body": "0.7의 가장 큰 변화는 ASIO 출력 지원입니다. 내 음악(로컬)을 ASIO 드라이버로 DAC에 직결해 DSD(최대 DSD512)와 PCM을 무변환·비트퍼펙트로 내보내고, 대상 DAC가 연결되지 않았을 때는 곧바로 일반 경로로 폴백하며 안내를 보여줘요. 여기에 더해 네트워크(DLNA) DSD 재생을 곡을 빠르게 바꿔도 끊김·무음 없이 안정화했고, DAC 기본 형식을 원래대로 확실히 복원(직접 바꾼 설정은 존중)하며, Apple Music을 포함한 스트리밍 소리도 선택한 출력 DAC로 정확히 보냅니다. 고음질(DSD256) 첫 곡 앨범아트가 안 뜨던 문제도 고쳤어요."
   },
-  "announcements": [
-    {
-      "id": "update-0.9.7",
-      "type": "banner",
-      "title": "v0.9.7 업데이트 — 새 기능 「음장효과」 · DSD 업샘플 꺼짐 · GPU 가속 수정",
-      "body": "홈 화면 음질 표시 오른쪽에 EFFECT 버튼이 새로 생겼습니다. BASS+(묵직하고 단단한 저음) · CLEAR+(또렷한 보컬과 디테일) · BASS+CLEAR · WIDE+(넓은 무대)와 스피커 모드(NEARFIELD/STUDIO/WIDE)를 클릭 한 번으로 켜고 끌 수 있고, FIR EQ 설정 화면과 서로 동기화됩니다. 또한 공간 효과를 켜고 끄거나 목표 레이트를 적용할 때, 일시정지 후 재생할 때 DSD 업샘플링이 저절로 꺼지던 문제를 근본 수정했고, GPU 가속이 프로그램을 켤 때마다 3분간 묶이던 문제, FIR EQ 적용 중 BIT-PERFECT 오표시, 스트리밍 업샘플링이 아무 안내 없이 꺼지던 문제도 고쳤습니다.",
-      "url": "https://github.com/Ghostseller/CastFi/releases/tag/v0.9.7",
-      "importance": "normal"
-    },
-    {
-      "id": "update-0.7.1",
-      "type": "banner",
-      "title": "v0.7.1 — ASIO 출력 지원 (0.7 최대 변화) · 네트워크 DSD 안정화 · 출력 장치 라우팅",
-      "body": "0.7의 가장 큰 변화는 ASIO 출력 지원입니다. 내 음악(로컬)을 ASIO 드라이버로 DAC에 직결해 DSD(최대 DSD512)와 PCM을 무변환·비트퍼펙트로 내보내고, 대상 DAC가 연결되지 않았을 때는 곧바로 일반 경로로 폴백하며 안내를 보여줘요. 여기에 더해 네트워크(DLNA) DSD 재생을 곡을 빠르게 바꿔도 끊김·무음 없이 안정화했고, DAC 기본 형식을 원래대로 확실히 복원(직접 바꾼 설정은 존중)하며, Apple Music을 포함한 스트리밍 소리도 선택한 출력 DAC로 정확히 보냅니다. 고음질(DSD256) 첫 곡 앨범아트가 안 뜨던 문제도 고쳤어요."
-    },
-    {
-      "id": "login-guide-2026-06",
-      "type": "banner",
-      "importance": "high",
-      "title": "스트리밍 로그인 안내 — 검색·재생·캐스트를 제대로 쓰려면",
-      "body": "CastFi의 검색·재생·캐스트(같이 듣기)를 제대로 쓰려면, 구독 중인 스트리밍 서비스에 한 번 로그인해 두세요. 상단 헤더의 서비스 아이콘(Spotify·Apple Music·YouTube Music)을 누르면 내장 플레이어가 열리고, 거기서 로그인하면 됩니다. 아이콘 색이 상태를 알려줘요 — 초록은 로그인됨, 앰버(주황)는 로그인이 필요하다는 표시입니다.\n\n로그인하면 가능해지는 것 — ① 검색 정확도 향상(플레이리스트·앨범까지 포함) ② 앱 안에서 바로 재생 ③ 플레이리스트·앨범에서 누른 곡부터 다음 곡까지 이어 재생 ④ 내 라이브러리·플레이리스트 접근 ⑤ 캐스트(같이 듣기) 시작·참여.\n\n서비스별 안내 — Spotify: 별도 앱 설치 없이 헤더 아이콘에서 로그인만 하면 됩니다(무료 계정도 가능, 내장 재생 음질 최대 ~256kbps). Apple Music: 헤더 Apple 아이콘 → '내장 엔진으로 재생'에서 열고 로그인하세요(Apple Music 구독 필요). YouTube Music: 헤더 YT Music 아이콘으로 플레이어를 연 뒤 Google 계정으로 로그인하면 인증이 자동 등록됩니다(특히 한국에서는 로그인하지 않으면 검색이 제한됩니다).\n\n캐스트(같이 듣기)는 참여자도 자신이 쓸 서비스에 로그인돼 있어야 그 서비스로 함께 들을 수 있어요. 미리 로그인해 두면 끊김 없이 바로 시작할 수 있습니다."
-    },
-    {
-      "id": "defender-fp-0.4.2",
-      "type": "banner",
-      "title": "Windows Defender 오탐 안내 — CastFi가 삭제될 수 있어요",
-      "body": "일부 PC에서 Windows Defender가 CastFi를 'Trojan:Win32/Bearfoos.A!ml' 로 잘못 탐지해 삭제할 수 있습니다. 이는 코드 서명이 없는 새 빌드에 대한 머신러닝 오탐(false positive)이며, 악성코드가 아니고 데이터에도 문제가 없습니다. 해결: ① Windows 보안 → 바이러스 및 위협 방지 → 해당 항목 '허용', ② 또는 설치 폴더 (%LOCALAPPDATA%\\Programs\\CastFi)를 검사 '제외'에 추가하면 다시 삭제되지 않습니다. 마이크로소프트에 오탐 신고를 접수했으며, 검토되면 모든 PC에서 자동으로 해제됩니다."
-    }
-  ],
-  "home": {
-    "enabled": false
+  {
+   "id": "login-guide-2026-06",
+   "type": "banner",
+   "importance": "high",
+   "title": "스트리밍 로그인 안내 — 검색·재생·캐스트를 제대로 쓰려면",
+   "body": "CastFi의 검색·재생·캐스트(같이 듣기)를 제대로 쓰려면, 구독 중인 스트리밍 서비스에 한 번 로그인해 두세요. 상단 헤더의 서비스 아이콘(Spotify·Apple Music·YouTube Music)을 누르면 내장 플레이어가 열리고, 거기서 로그인하면 됩니다. 아이콘 색이 상태를 알려줘요 — 초록은 로그인됨, 앰버(주황)는 로그인이 필요하다는 표시입니다.\n\n로그인하면 가능해지는 것 — ① 검색 정확도 향상(플레이리스트·앨범까지 포함) ② 앱 안에서 바로 재생 ③ 플레이리스트·앨범에서 누른 곡부터 다음 곡까지 이어 재생 ④ 내 라이브러리·플레이리스트 접근 ⑤ 캐스트(같이 듣기) 시작·참여.\n\n서비스별 안내 — Spotify: 별도 앱 설치 없이 헤더 아이콘에서 로그인만 하면 됩니다(무료 계정도 가능, 내장 재생 음질 최대 ~256kbps). Apple Music: 헤더 Apple 아이콘 → '내장 엔진으로 재생'에서 열고 로그인하세요(Apple Music 구독 필요). YouTube Music: 헤더 YT Music 아이콘으로 플레이어를 연 뒤 Google 계정으로 로그인하면 인증이 자동 등록됩니다(특히 한국에서는 로그인하지 않으면 검색이 제한됩니다).\n\n캐스트(같이 듣기)는 참여자도 자신이 쓸 서비스에 로그인돼 있어야 그 서비스로 함께 들을 수 있어요. 미리 로그인해 두면 끊김 없이 바로 시작할 수 있습니다."
   },
-  "promo": {
-    "intro": {
-      "enabled": false
-    }
-  },
-  "flags": {},
-  "links": {
-    "privacy": "https://github.com/Ghostseller/CastFi/blob/main/PRIVACY.md",
-    "terms": "https://github.com/Ghostseller/CastFi/blob/main/TERMS.md"
-  },
-  "texts": {},
-  "telemetry": {
-    "enabled": true,
-    "ingestUrl": "https://castfi-telemetry.banessayuu.workers.dev"
-  },
-  "errors": {
-    "enabled": false
-  },
-  "testDevices": []
+  {
+   "id": "defender-fp-0.4.2",
+   "type": "banner",
+   "title": "Windows Defender 오탐 안내 — CastFi가 삭제될 수 있어요",
+   "body": "일부 PC에서 Windows Defender가 CastFi를 'Trojan:Win32/Bearfoos.A!ml' 로 잘못 탐지해 삭제할 수 있습니다. 이는 코드 서명이 없는 새 빌드에 대한 머신러닝 오탐(false positive)이며, 악성코드가 아니고 데이터에도 문제가 없습니다. 해결: ① Windows 보안 → 바이러스 및 위협 방지 → 해당 항목 '허용', ② 또는 설치 폴더 (%LOCALAPPDATA%\\Programs\\CastFi)를 검사 '제외'에 추가하면 다시 삭제되지 않습니다. 마이크로소프트에 오탐 신고를 접수했으며, 검토되면 모든 PC에서 자동으로 해제됩니다."
+  }
+ ],
+ "home": {
+  "enabled": false
+ },
+ "promo": {
+  "intro": {
+   "enabled": false
+  }
+ },
+ "flags": {},
+ "links": {
+  "privacy": "https://github.com/Ghostseller/CastFi/blob/main/PRIVACY.md",
+  "terms": "https://github.com/Ghostseller/CastFi/blob/main/TERMS.md"
+ },
+ "texts": {},
+ "telemetry": {
+  "enabled": true,
+  "ingestUrl": "https://castfi-telemetry.banessayuu.workers.dev"
+ },
+ "errors": {
+  "enabled": false
+ },
+ "testDevices": []
 }
