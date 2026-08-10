@@ -11,13 +11,15 @@
 - 폴더를 추가하면 보유 음원을 스캔해 곡/앨범/아티스트로 정리합니다. 수만 곡 규모도 빠르게 탐색.
 - **Synology NAS 직접 스트리밍** — 파일을 복사하지 않고 NAS의 음원을 그대로 재생.
 - 앨범 정보·커버 자동 보강, 자동 태거(지문 인식), 둘러보기·믹스·차트.
+- **「폴더」 탐색** — 디스크에 정리해 둔 폴더 구조 그대로 찾아보고 재생. 태그가 없는 파일도 파일명으로 표시됩니다.
 - 로컬 플레이리스트, 재생 큐, 다국어 점프 인덱스, 통합 검색(내 음악 + 스트리밍).
 
 ### 고음질 재생
 - **비트퍼펙트(WASAPI 독점)** — 선택한 DAC로 원본 그대로. 곡에 맞춰 장치 형식(레이트/비트)을 자동 설정하고, 앱을 끄면 원래 설정으로 되돌립니다.
-- **ASIO 네이티브 DSD** — 지원 DAC에서 DSD64~DSD512 네이티브 재생(DoP도 지원).
-- **DSD 업샘플링** — PCM 음원을 실시간으로 DSD64~512로 업샘플해 재생. 보간 필터·모듈레이터·정밀도를 취향대로 선택(NVIDIA GPU 가속 지원, 없어도 동작).
-- **오프라인 DSD 변환** — FLAC/WAV를 DSD `.dsf` 파일로 변환해 저장. 여러 곡 동시 변환, 태그·커버 유지.
+- **ASIO 네이티브 DSD** — 지원 DAC에서 DSD64~DSD1024 네이티브 재생(DoP도 지원). DSD2048 파일도 지원 장비에서 재생할 수 있습니다.
+- **DSD 업샘플링** — PCM 음원을 실시간으로 DSD64~1024로 업샘플해 재생. 보간 필터·모듈레이터·정밀도를 취향대로 선택. DSD512까지는 GPU 없이도 동작하며, DSD1024 실시간은 NVIDIA GPU 가속이 필요합니다.
+- **오프라인 DSD 변환** — FLAC/WAV를 DSD `.dsf` 파일로 변환해 저장 — 최대 DSD2048(실험적)까지. 여러 곡 동시 변환, 태그·커버 유지.
+- **DSD Direct Safe (실험적)** — 일부 DAC의 고속 DSD Direct 재생에서 발생할 수 있는 가청 아티팩트를 줄이는 보호 기능. 필요한 구간에서만 동작하고 그 외에는 소리를 건드리지 않습니다.
 - **음량 일관성·보호** — 필터/EQ 조합을 바꿔도 음량이 점프하지 않게 통합 관리.
 
 ### FIR 정밀 EQ · 헤드폰 보정 · 스피커 모드
@@ -37,6 +39,7 @@
 
 ### 가사 · 뮤직비디오 · 그 외
 - 동기 가사(번역 지원)·전체화면 보기, 곡에 맞는 뮤직비디오 배경/동영상 모드.
+- **음장 효과** — BASS+ · CLEAR+ · WIDE+ 를 홈 화면에서 한 번에 켜고 끄는 사운드 효과.
 - **신호 경로** — 소스 → 처리 → 출력 장치를 한눈에(포맷/품질 표시).
 - 게임식 **업적**(수집/재생/음질/탐험), **스킨/테마**(내장 + 직접 제작), 캐스트(폰과 함께 감상).
 - **오류 제보** — 설정 → 정보에서 증상을 적어 바로 전송(보안 정보 자동 제거).
@@ -55,7 +58,7 @@
 **시스템 요구사항**
 - Windows 10/11 (64-bit). Windows 10은 [WebView2 런타임](https://developer.microsoft.com/microsoft-edge/webview2/)이 필요할 수 있습니다(대부분 기본 설치됨).
 - 비트퍼펙트/DSD 재생: 지원 DAC(USB 오디오). ASIO 네이티브 DSD는 DAC 제조사 ASIO 드라이버 필요.
-- DSD 업샘플·변환 고배율: NVIDIA GPU(CUDA) 권장 — 없어도 동작하며 PC 성능에 맞춰 자동 조절됩니다.
+- DSD 업샘플·변환 고배율: NVIDIA GPU(CUDA) 권장 — DSD512까지는 없어도 동작하며 PC 성능에 맞춰 자동 조절됩니다. DSD1024 실시간 업샘플은 GPU 가속이 필요합니다.
 - 시스템 전역 EQ(그래픽/파라메트릭): [Equalizer APO](https://equalizerapo.com/) 설치 필요. **FIR 정밀 EQ·헤드폰 보정/매칭은 별도 설치 없이 동작합니다.**
 - Spotify 원격 제어 일부 기능(재생 시작/큐)은 Spotify Premium 필요.
 
@@ -86,13 +89,14 @@ Play your lossless library (FLAC · WAV · DSD) and NAS collection bit-perfect o
 ## Features
 
 **My Music — local & NAS library**
-Add folders and browse tens of thousands of tracks by song/album/artist. Direct Synology NAS streaming (no copying), automatic album metadata & cover enrichment, fingerprint auto-tagging, discovery/mixes/charts, local playlists, play queue, and unified search across your library and streaming services.
+Add folders and browse tens of thousands of tracks by song/album/artist. Direct Synology NAS streaming (no copying), automatic album metadata & cover enrichment, fingerprint auto-tagging, folder browsing that mirrors your on-disk structure (untagged files shown by filename), discovery/mixes/charts, local playlists, play queue, and unified search across your library and streaming services.
 
 **High-fidelity playback**
 - **Bit-perfect (WASAPI exclusive)** to your chosen DAC — device format (rate/bits) follows each track automatically and is restored when the app exits.
-- **ASIO native DSD** — DSD64–DSD512 on supported DACs (DoP also supported).
-- **DSD upsampling** — real-time PCM→DSD64–512 with selectable interpolation filters, modulators, and precision (NVIDIA GPU-accelerated; works without a GPU too).
-- **Offline DSD conversion** — convert FLAC/WAV to `.dsf` files with tags & covers preserved; convert multiple tracks in parallel.
+- **ASIO native DSD** — DSD64–DSD1024 on supported DACs (DoP also supported); DSD2048 files also play on devices that accept them.
+- **DSD upsampling** — real-time PCM→DSD64–1024 with selectable interpolation filters, modulators, and precision. Works without a GPU up to DSD512; DSD1024 real-time requires NVIDIA GPU acceleration.
+- **Offline DSD conversion** — convert FLAC/WAV to `.dsf` files — up to DSD2048 (experimental) — with tags & covers preserved; convert multiple tracks in parallel.
+- **DSD Direct Safe (experimental)** — reduces audible artifacts that can occur during high-rate DSD Direct playback on some DACs; engages only where needed and leaves the sound untouched otherwise.
 - **Loudness consistency & protection** — no volume jumps when switching filter/EQ combinations.
 
 **Precision FIR EQ · headphone correction · speaker mode**
@@ -105,7 +109,7 @@ Spotify (playback/queue/search/likes + desktop app integration), built-in YouTub
 Send local/NAS music to DLNA renderers (gapless), native DSD (DoP) output, multi-room synchronized playback, and simultaneous PC listening with delay sync.
 
 **Lyrics · music videos · more**
-Synced lyrics with translation and full-screen view; music-video backgrounds; a Roon-style signal-path diagram (source → processing → output with format/quality); game-style achievements; skins/themes (built-in + custom); in-app error reporting (sensitive data automatically removed).
+Synced lyrics with translation and full-screen view; music-video backgrounds; one-tap sound-field effects (BASS+ · CLEAR+ · WIDE+); a Roon-style signal-path diagram (source → processing → output with format/quality); game-style achievements; skins/themes (built-in + custom); in-app error reporting (sensitive data automatically removed).
 
 **Android remote** *(in testing)* — auto-discovers your PC on the same Wi-Fi for remote playback/EQ/lyrics/playlist control. Public release coming.
 
@@ -114,7 +118,7 @@ Synced lyrics with translation and full-screen view; music-video backgrounds; a 
 2. Run the installer — the app lives in the system tray and keeps running in the background.
 3. If Windows SmartScreen warns (code signing is in progress), click **"More info" → "Run anyway"**.
 
-**Requirements** — Windows 10/11 (64-bit); [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/) on Windows 10 (usually preinstalled); a supported USB DAC for bit-perfect/DSD (vendor ASIO driver for native DSD); NVIDIA GPU (CUDA) recommended for high-rate DSD upsampling/conversion (optional — auto-adjusts without one); [Equalizer APO](https://equalizerapo.com/) only for the system-wide graphic/parametric EQ (**precision FIR EQ and headphone correction/matching work standalone**); Spotify Premium for some remote-playback features.
+**Requirements** — Windows 10/11 (64-bit); [WebView2 Runtime](https://developer.microsoft.com/microsoft-edge/webview2/) on Windows 10 (usually preinstalled); a supported USB DAC for bit-perfect/DSD (vendor ASIO driver for native DSD); NVIDIA GPU (CUDA) recommended for high-rate DSD upsampling/conversion (works without one up to DSD512 and auto-adjusts; DSD1024 real-time upsampling requires GPU acceleration); [Equalizer APO](https://equalizerapo.com/) only for the system-wide graphic/parametric EQ (**precision FIR EQ and headphone correction/matching work standalone**); Spotify Premium for some remote-playback features.
 
 **Getting started** — add your music folders (or NAS) in My Music; pick your DAC in Audio Output and enable bit-perfect/DSD; search your headphone model in the EQ tab to apply correction/matching; connect Spotify in Settings (one-time browser login) and sign in to YT Music in the built-in tab.
 
