@@ -1,68 +1,68 @@
 {
- "update": {
-  "pc": {
-   "version": "0.10.1",
-   "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.10.1/CastFi-Setup-0.10.1.exe",
-   "sha256": "A6346DD9C470AB3D1F1624B9251870FD6A9298611FAD43BE294C83A439EBCF74",
-   "notes": "CastFi AP-1 아웃보드 프로세서가 들어왔습니다. 재생 화면의 AP-1 칩을 누르면 별도의 장비 창이 열리고 BASS·PRESENCE·AIR·BRILLIANCE·EXCITER·SATURATION·DENSITY·STEREO 노브와 프리셋(Natural·Analog·Detail·Big)으로 소리를 실시간으로 만집니다. 기존 음장·스피커 모드·크로스피드·FIR EQ 와는 별개의 유닛이라 함께 쓸 수 있습니다. 뮤직비디오·가사 모드는 직링크 우선 재생으로 되돌려 임베드가 막힌 영상도 재생되고, MV 검색이 YouTube 계정 검색기록에 남지 않으며, 노래방 영상이 공식 MV 를 제치던 검색 결함을 고쳤습니다. 집 밖 스트리밍이 프로덕션 서버로 열렸습니다(Android 0.4.5 의 [이 PC 와 지금 연결] 과 함께). 업데이트 직후 첫 실행이 오류→'이미 실행 중'→세 번째에 정상이 되던 문제, 일부 DAC(FiiO)에서 DSD512 24.576 MHz 가 소리 없이 멈추던 문제, 폰이 헤드폰 카탈로그를 요청하면 서버가 수십 초 멈추던 문제를 고쳤습니다.",
-   "mandatory": false
+  "update": {
+    "pc": {
+      "version": "0.10.2",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.10.2/CastFi-Setup-0.10.2.exe",
+      "sha256": "5EDEB43A3A46D651AD95A6EFDEF26F8F7C4826A88ACE5CDE9F137F89D12D874A",
+      "notes": "DSD 업샘플에서 고른 모듈레이터와 보간 필터가 실제와 다르게 동작하던 문제를 근본 수정했습니다. Trellis Direct 를 골라도 Standard 로 변환되던 문제(스트리밍·외장 앱 소리를 ASIO 로 내보내는 경로), 정밀한 보간 필터가 매번 낮은 단계로 내려가던 문제, 재생 중에 바꾼 모듈레이터·필터가 반영되지 않던 문제, 홈 화면의 모듈레이터 이름이 Standard 로 잘못 표시되던 문제입니다. 48·96·192kHz 음원에서만 DSD 변환이 켜지지 않던 제보에는 「샘플레이트 계열 맞춤」 옵션을 새로 넣었습니다(기본 꺼짐) — DSD 출력 레이트는 음원의 샘플레이트 계열을 따라가는데 상당수 DAC 이 48kHz 계열 DSD 를 받지 않습니다. 켜면 그 음원만 44.1kHz 계열로 맞춰 DAC 이 실제로 받는 레이트로 내보내고, 증상이 실제로 생겼을 때만 신호 경로 화면에 사유와 켜기 버튼이 나타납니다. 켜지 않으면 DSD 변환 동작은 이전 버전과 완전히 같습니다. 다른 프로그램이 출력 장치를 독점 모드로 쥐고 있을 때는 'DAC 미지원'처럼 보이던 반복 문구 대신 원인을 말하고 자동 재시도를 멈춥니다(업샘플 스위치는 꺼지지 않습니다). 화면에 뜨는 공지는 최대 4개, 버전 공지는 최신 하나만 표시합니다.",
+      "mandatory": false
+    },
+    "android": {
+      "versionCode": 1,
+      "version": "0.1.0",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/android-v0.1.0/CastFi-0.1.0.apk",
+      "notes": "CastFi 안드로이드 첫 릴리스 — PC 원격 제어.",
+      "mandatory": false
+    }
   },
-  "android": {
-   "versionCode": 1,
-   "version": "0.1.0",
-   "url": "https://github.com/Ghostseller/CastFi/releases/download/android-v0.1.0/CastFi-0.1.0.apk",
-   "notes": "CastFi 안드로이드 첫 릴리스 — PC 원격 제어.",
-   "mandatory": false
-  }
- },
- "ads": {
-  "enabled": false
- },
- "cast": {
-  "enabled": false,
-  "url": "https://castfi-cast.banessayuu.workers.dev"
- },
- "announcements": [
-  {
-   "id": "update-0.10.1",
-   "title": "v0.10.1 업데이트 — CastFi AP-1 아웃보드 프로세서 · 뮤직비디오 직링크 우선 · 집 밖 스트리밍",
-   "body": "CastFi AP-1 아웃보드 프로세서가 들어왔습니다. 재생 화면의 AP-1 칩을 누르면 별도의 장비 창이 열리고 BASS·PRESENCE·AIR·BRILLIANCE·EXCITER·SATURATION·DENSITY·STEREO 노브와 프리셋(Natural·Analog·Detail·Big)으로 소리를 실시간으로 만집니다. 기존 음장·스피커 모드·크로스피드·FIR EQ 와는 별개의 유닛이라 함께 쓸 수 있습니다. 뮤직비디오·가사 모드는 직링크 우선 재생으로 되돌려 임베드가 막힌 영상도 재생되고, MV 검색이 YouTube 계정 검색기록에 남지 않으며, 노래방 영상이 공식 MV 를 제치던 검색 결함을 고쳤습니다. 집 밖 스트리밍이 프로덕션 서버로 열렸습니다(Android 0.4.5 의 [이 PC 와 지금 연결] 과 함께). 업데이트 직후 첫 실행이 오류→'이미 실행 중'→세 번째에 정상이 되던 문제, 일부 DAC(FiiO)에서 DSD512 24.576 MHz 가 소리 없이 멈추던 문제, 폰이 헤드폰 카탈로그를 요청하면 서버가 수십 초 멈추던 문제를 고쳤습니다.",
-   "type": "update"
+  "ads": {
+    "enabled": false
   },
-  {
-   "id": "login-guide-2026-06",
-   "type": "banner",
-   "importance": "high",
-   "title": "스트리밍 로그인 안내 — 검색·재생·캐스트를 제대로 쓰려면",
-   "body": "CastFi의 검색·재생·캐스트(같이 듣기)를 제대로 쓰려면, 구독 중인 스트리밍 서비스에 한 번 로그인해 두세요. 상단 헤더의 서비스 아이콘(Spotify·Apple Music·YouTube Music)을 누르면 내장 플레이어가 열리고, 거기서 로그인하면 됩니다. 아이콘 색이 상태를 알려줘요 — 초록은 로그인됨, 앰버(주황)는 로그인이 필요하다는 표시입니다.\n\n로그인하면 가능해지는 것 — ① 검색 정확도 향상(플레이리스트·앨범까지 포함) ② 앱 안에서 바로 재생 ③ 플레이리스트·앨범에서 누른 곡부터 다음 곡까지 이어 재생 ④ 내 라이브러리·플레이리스트 접근 ⑤ 캐스트(같이 듣기) 시작·참여.\n\n서비스별 안내 — Spotify: 별도 앱 설치 없이 헤더 아이콘에서 로그인만 하면 됩니다(무료 계정도 가능, 내장 재생 음질 최대 ~256kbps). Apple Music: 헤더 Apple 아이콘 → '내장 엔진으로 재생'에서 열고 로그인하세요(Apple Music 구독 필요). YouTube Music: 헤더 YT Music 아이콘으로 플레이어를 연 뒤 Google 계정으로 로그인하면 인증이 자동 등록됩니다(특히 한국에서는 로그인하지 않으면 검색이 제한됩니다).\n\n캐스트(같이 듣기)는 참여자도 자신이 쓸 서비스에 로그인돼 있어야 그 서비스로 함께 들을 수 있어요. 미리 로그인해 두면 끊김 없이 바로 시작할 수 있습니다."
+  "cast": {
+    "enabled": false,
+    "url": "https://castfi-cast.banessayuu.workers.dev"
   },
-  {
-   "id": "defender-fp-0.4.2",
-   "type": "banner",
-   "title": "Windows Defender 오탐 안내 — CastFi가 삭제될 수 있어요",
-   "body": "일부 PC에서 Windows Defender가 CastFi를 'Trojan:Win32/Bearfoos.A!ml' 로 잘못 탐지해 삭제할 수 있습니다. 이는 코드 서명이 없는 새 빌드에 대한 머신러닝 오탐(false positive)이며, 악성코드가 아니고 데이터에도 문제가 없습니다. 해결: ① Windows 보안 → 바이러스 및 위협 방지 → 해당 항목 '허용', ② 또는 설치 폴더 (%LOCALAPPDATA%\\Programs\\CastFi)를 검사 '제외'에 추가하면 다시 삭제되지 않습니다. 마이크로소프트에 오탐 신고를 접수했으며, 검토되면 모든 PC에서 자동으로 해제됩니다."
-  }
- ],
- "home": {
-  "enabled": false
- },
- "promo": {
-  "intro": {
-   "enabled": false
-  }
- },
- "flags": {},
- "links": {
-  "privacy": "https://github.com/Ghostseller/CastFi/blob/main/PRIVACY.md",
-  "terms": "https://github.com/Ghostseller/CastFi/blob/main/TERMS.md"
- },
- "texts": {},
- "telemetry": {
-  "enabled": true,
-  "ingestUrl": "https://castfi-telemetry.banessayuu.workers.dev"
- },
- "errors": {
-  "enabled": false
- },
- "testDevices": []
+  "announcements": [
+    {
+      "id": "update-0.10.2",
+      "title": "v0.10.2 업데이트 — 고른 모듈레이터·필터가 그대로 · 샘플레이트 계열 맞춤 옵션 · 독점 점유 안내",
+      "body": "DSD 업샘플에서 고른 모듈레이터와 보간 필터가 실제와 다르게 동작하던 문제를 근본 수정했습니다. Trellis Direct 를 골라도 Standard 로 변환되던 문제(스트리밍·외장 앱 소리를 ASIO 로 내보내는 경로), 정밀한 보간 필터가 매번 낮은 단계로 내려가던 문제, 재생 중에 바꾼 모듈레이터·필터가 반영되지 않던 문제, 홈 화면의 모듈레이터 이름이 Standard 로 잘못 표시되던 문제입니다. 48·96·192kHz 음원에서만 DSD 변환이 켜지지 않던 제보에는 「샘플레이트 계열 맞춤」 옵션을 새로 넣었습니다(기본 꺼짐) — DSD 출력 레이트는 음원의 샘플레이트 계열을 따라가는데 상당수 DAC 이 48kHz 계열 DSD 를 받지 않습니다. 켜면 그 음원만 44.1kHz 계열로 맞춰 DAC 이 실제로 받는 레이트로 내보내고, 증상이 실제로 생겼을 때만 신호 경로 화면에 사유와 켜기 버튼이 나타납니다. 켜지 않으면 DSD 변환 동작은 이전 버전과 완전히 같습니다. 다른 프로그램이 출력 장치를 독점 모드로 쥐고 있을 때는 'DAC 미지원'처럼 보이던 반복 문구 대신 원인을 말하고 자동 재시도를 멈춥니다(업샘플 스위치는 꺼지지 않습니다). 화면에 뜨는 공지는 최대 4개, 버전 공지는 최신 하나만 표시합니다.",
+      "type": "update"
+    },
+    {
+      "id": "login-guide-2026-06",
+      "type": "banner",
+      "importance": "high",
+      "title": "스트리밍 로그인 안내 — 검색·재생·캐스트를 제대로 쓰려면",
+      "body": "CastFi의 검색·재생·캐스트(같이 듣기)를 제대로 쓰려면, 구독 중인 스트리밍 서비스에 한 번 로그인해 두세요. 상단 헤더의 서비스 아이콘(Spotify·Apple Music·YouTube Music)을 누르면 내장 플레이어가 열리고, 거기서 로그인하면 됩니다. 아이콘 색이 상태를 알려줘요 — 초록은 로그인됨, 앰버(주황)는 로그인이 필요하다는 표시입니다.\n\n로그인하면 가능해지는 것 — ① 검색 정확도 향상(플레이리스트·앨범까지 포함) ② 앱 안에서 바로 재생 ③ 플레이리스트·앨범에서 누른 곡부터 다음 곡까지 이어 재생 ④ 내 라이브러리·플레이리스트 접근 ⑤ 캐스트(같이 듣기) 시작·참여.\n\n서비스별 안내 — Spotify: 별도 앱 설치 없이 헤더 아이콘에서 로그인만 하면 됩니다(무료 계정도 가능, 내장 재생 음질 최대 ~256kbps). Apple Music: 헤더 Apple 아이콘 → '내장 엔진으로 재생'에서 열고 로그인하세요(Apple Music 구독 필요). YouTube Music: 헤더 YT Music 아이콘으로 플레이어를 연 뒤 Google 계정으로 로그인하면 인증이 자동 등록됩니다(특히 한국에서는 로그인하지 않으면 검색이 제한됩니다).\n\n캐스트(같이 듣기)는 참여자도 자신이 쓸 서비스에 로그인돼 있어야 그 서비스로 함께 들을 수 있어요. 미리 로그인해 두면 끊김 없이 바로 시작할 수 있습니다."
+    },
+    {
+      "id": "defender-fp-0.4.2",
+      "type": "banner",
+      "title": "Windows Defender 오탐 안내 — CastFi가 삭제될 수 있어요",
+      "body": "일부 PC에서 Windows Defender가 CastFi를 'Trojan:Win32/Bearfoos.A!ml' 로 잘못 탐지해 삭제할 수 있습니다. 이는 코드 서명이 없는 새 빌드에 대한 머신러닝 오탐(false positive)이며, 악성코드가 아니고 데이터에도 문제가 없습니다. 해결: ① Windows 보안 → 바이러스 및 위협 방지 → 해당 항목 '허용', ② 또는 설치 폴더 (%LOCALAPPDATA%\\Programs\\CastFi)를 검사 '제외'에 추가하면 다시 삭제되지 않습니다. 마이크로소프트에 오탐 신고를 접수했으며, 검토되면 모든 PC에서 자동으로 해제됩니다."
+    }
+  ],
+  "home": {
+    "enabled": false
+  },
+  "promo": {
+    "intro": {
+      "enabled": false
+    }
+  },
+  "flags": {},
+  "links": {
+    "privacy": "https://github.com/Ghostseller/CastFi/blob/main/PRIVACY.md",
+    "terms": "https://github.com/Ghostseller/CastFi/blob/main/TERMS.md"
+  },
+  "texts": {},
+  "telemetry": {
+    "enabled": true,
+    "ingestUrl": "https://castfi-telemetry.banessayuu.workers.dev"
+  },
+  "errors": {
+    "enabled": false
+  },
+  "testDevices": []
 }
