@@ -1,10 +1,10 @@
 {
   "update": {
     "pc": {
-      "version": "0.11.1",
-      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.11.1/CastFi-Setup-0.11.1.exe",
-      "sha256": "D992DB52FAA215C62BF9BCE9BFA62F689CF192FE63DA1A824943911B975390A0",
-      "notes": "앨범 아트 전체 화면에 '대각 분할'이 생겼습니다 — 화면을 대각선으로 나눠 앨범의 대표색 두 가지로 칠하고, 위에는 곡 제목 · 아래에는 가수를 띄우며, 경계선이 음악에 맞춰 출렁이고 꽃잎이 흩날립니다(Wallpaper Engine 'LIFE x DEATH' · Asuki 에서 영감). 약 15초마다 1~2초씩 앱이 멈추던 문제도 고쳤습니다.",
+      "version": "0.11.2",
+      "url": "https://github.com/Ghostseller/CastFi/releases/download/v0.11.2/CastFi-Setup-0.11.2.exe",
+      "sha256": "180BEB83120AEFE0E03648AA82F793E82847174A06BF3BAFA400AE25DD5821BD",
+      "notes": "스트리밍 DSD 업샘플 중 일부 USB DAC 드라이버가 재설정을 요청하면 업샘플이 꺼지던 문제를 고쳤습니다 — 이제 출력만 자동으로 다시 시작해 소리가 이어집니다. 다른 출력 장치가 없을 때 같은 DAC 로 켜면 꺼지기를 반복하던 문제도 안내로 바꿨고, 업샘플 안내 창은 [확인]을 눌러야 닫힙니다.",
       "mandatory": false
     },
     "android": {
@@ -24,9 +24,9 @@
   },
   "announcements": [
     {
-      "id": "update-0.11.1",
-      "title": "v0.11.1 업데이트 — 앨범 아트 전체 화면 '대각 분할'",
-      "body": "앨범 아트 전체 화면에 '대각 분할'이 생겼습니다 — 화면을 대각선으로 나눠 앨범의 대표색 두 가지로 칠하고, 위에는 곡 제목 · 아래에는 가수를 띄우며, 경계선이 음악에 맞춰 출렁이고 꽃잎이 흩날립니다(Wallpaper Engine 'LIFE x DEATH' · Asuki 에서 영감). 약 15초마다 1~2초씩 앱이 멈추던 문제도 고쳤습니다.",
+      "id": "update-0.11.2",
+      "title": "v0.11.2 업데이트 — 스트리밍 DSD 업샘플 안정성",
+      "body": "스트리밍 DSD 업샘플 중 일부 USB DAC 드라이버가 재설정을 요청하면 업샘플이 꺼지던 문제를 고쳤습니다 — 이제 출력만 자동으로 다시 시작해 소리가 이어집니다. 다른 출력 장치가 없을 때 같은 DAC 로 켜면 꺼지기를 반복하던 문제도 안내로 바꿨고, 업샘플 안내 창은 [확인]을 눌러야 닫힙니다.",
       "type": "update"
     },
     {
